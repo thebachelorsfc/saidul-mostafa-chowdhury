@@ -167,6 +167,23 @@
       .world .story{font-size:1.16rem;line-height:1.78;color:var(--wsoft);max-width:46em}
       .world .story strong{color:#fff}
       .world .story + .story{margin-top:14px}
+      /* Polish pack 2026-11-19: soft seams, section numbers, drop cap, hover lift, work images */
+      main{counter-reset:sec}
+      #story,#world-teacher,#world-founder,#world-captain,#mind,#skills,#offduty,#journey,#works,#ask{counter-increment:sec}
+      #story .kicker::before,.world .kicker::before,#mind .kicker::before,#offduty .kicker::before,#journey .kicker::before,#works .kicker::before,#ask .kicker::before{content:counter(sec,decimal-leading-zero)" · ";opacity:.6}
+      #skills .skills-k::before{content:counter(sec,decimal-leading-zero)" · ";opacity:.6}
+      main>section:not(.opening){box-shadow:inset 0 26px 30px -26px rgba(6,10,24,.30)}
+      body:not(.bn) #story .lead::first-letter{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700;font-size:3.05em;float:left;line-height:.82;padding:5px 12px 0 0;color:#7a5200}
+      .tile{transition:transform .35s ease,box-shadow .35s ease}
+      .tile:hover{transform:translateY(-4px);box-shadow:0 18px 34px -16px rgba(0,0,0,.45)}
+      .skill-chip{transition:background .25s,color .25s,border-color .25s,transform .25s ease}
+      .skill-chip:hover{transform:translateY(-2px)}
+      .work{transition:box-shadow .35s ease}
+      .work:hover{box-shadow:0 18px 40px rgba(90,70,20,.14)}
+      .c-med .ring{transition:transform .3s ease,box-shadow .3s ease}
+      .c-med:hover .ring{transform:translateY(-4px);box-shadow:0 14px 28px -10px rgba(0,0,0,.5)}
+      .work-img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:2px 0 16px}
+      @media (prefers-reduced-motion:reduce){.tile,.skill-chip,.c-med .ring{transition:none}}
       .cap-photo{margin:36px 0 0}
       .cap-photo img{display:block;width:100%;max-width:520px;margin:0 auto;border-radius:18px;border:1px solid rgba(255,255,255,.16);box-shadow:0 24px 50px -18px rgba(0,0,0,.55)}
       .cap-photo figcaption{margin-top:12px;text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
@@ -791,6 +808,7 @@
                 <p class="wsub" data-i18n="wk2S">The club's visual identity — drawn by me, its founder.</p>
               </button>
               <div class="work-body"><div class="work-body-in">
+                <img class="work-img" src="https://bachelors-fc.vercel.app/assets/jersey.jpg" alt="The Bachelors FC home kit" loading="lazy">
                 <ul>
                   <li data-i18n="wk2L1"><b>Home kit</b> — white with navy pinstripes, navy sleeves and collar, gold-and-black hexagonal lion crest</li>
                   <li data-i18n="wk2L2"><b>Negative-space wordmark</b> — BACHELORS, with the O drawn as a football</li>
@@ -805,6 +823,7 @@
                 <p class="wsub" data-i18n="wk3S">The biggest work of all — an institution, not just a team.</p>
               </button>
               <div class="work-body"><div class="work-body-in">
+                <img class="work-img" src="https://bachelors-fc.vercel.app/assets/team-photo-band.jpg" alt="The Bachelors FC squad" loading="lazy">
                 <ul>
                   <li data-i18n="wk3L1">Founded <b>2026</b> in Khulshi, Chittagong — apolitical and non-profit</li>
                   <li data-i18n="wk3L2">Built for <b>bachelor youth</b>: brotherhood, discipline, leadership, purpose</li>
