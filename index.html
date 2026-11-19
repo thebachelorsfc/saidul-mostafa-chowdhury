@@ -131,6 +131,9 @@
       .essence .w{opacity:0;display:inline-block;transform:translateY(12px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
       .essence.play .w{opacity:1;transform:none}
       .hero-tag{margin:16px 0 0;color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(.95rem,2.6vw,1.15rem)}
+      .hero-photo{margin:36px auto 0;max-width:460px}
+      .hero-photo img{display:block;width:100%;border-radius:20px;border:1px solid rgba(230,185,63,.35);box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+      .hero-photo figcaption{margin-top:12px;text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
       body.bn .hero-tag{letter-spacing:.04em}
       .scroll-cue{margin-top:52px;color:#8f99b0;font-weight:600;display:flex;align-items:center;gap:10px;font-size:.98rem}
       .scroll-cue .arr{color:var(--gold);display:inline-block;animation:bob 1.9s ease-in-out infinite;font-size:1.2rem}
@@ -164,6 +167,9 @@
       .world .story{font-size:1.16rem;line-height:1.78;color:var(--wsoft);max-width:46em}
       .world .story strong{color:#fff}
       .world .story + .story{margin-top:14px}
+      .cap-photo{margin:36px 0 0}
+      .cap-photo img{display:block;width:100%;max-width:520px;margin:0 auto;border-radius:18px;border:1px solid rgba(255,255,255,.16);box-shadow:0 24px 50px -18px rgba(0,0,0,.55)}
+      .cap-photo figcaption{margin-top:12px;text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
       .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:14px;margin-top:34px}
       @media (max-width:760px){.tiles{grid-template-columns:1fr}}
       .tile{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px 22px}
@@ -462,6 +468,10 @@
           <h1 class="name disp rv in"><span data-i18n="name1">Saidul Mostafa</span><br /><span class="gold" data-i18n="name2">Chowdhury</span></h1>
           <p class="essence" id="essenceLine">Assistant Teacher (English) · BA (Hons) in English Language &amp; Literature, Port City International University ’26 · Founder, The Bachelors FC</p>
           <p class="hero-tag rv in" data-i18n="heroTag">Chattogram, Bangladesh</p>
+          <figure class="hero-photo rv in">
+            <img src="captain-team.jpg" alt="The Bachelors FC squad on the turf" fetchpriority="high">
+            <figcaption data-i18n="cCap">With the squad — The Bachelors FC</figcaption>
+          </figure>
           <p class="scroll-cue"><span data-i18n="scrollCue">Scroll to explore</span><span class="arr">↓</span></p>
         </div>
       </section>
@@ -961,7 +971,7 @@
             cs1K:"Matches in goal", cs2K:"Saves", cs3K:"Passion — my own rating",
             c1K:"Captain since", c1V:"29 October 2026",
             c2K:"Position", c2V:"Goalkeeper · Shirt #99",
-            c3K:"First match", c3V:"6 Nov 2026 · vs Madrasha Khairul Ummah FC",
+            c3K:"First match", c3V:"6 Nov 2026 · vs Madrasha Khairul Ummah FC", cCap:"With the squad — The Bachelors FC",
             mKicker:"Personality", mTitle:"Personality",
             mIntro:"My personality type is INTJ-A — “The Architect” (16Personalities).",
             tr1K:"Energy", tr1V:"Introverted", tr1L:"Extraverted", tr1R:"Introverted",
@@ -1069,7 +1079,7 @@
             cs1K:"গোলে খেলা ম্যাচ", cs2K:"সেভ", cs3K:"প্যাশন — নিজের দেওয়া রেটিং",
             c1K:"অধিনায়ক যেদিন থেকে", c1V:"২৯ অক্টোবর ২০২৬",
             c2K:"পজিশন", c2V:"গোলকিপার · জার্সি #৯৯",
-            c3K:"প্রথম ম্যাচ", c3V:"৬ নভেম্বর ২০২৬ · বনাম Madrasha Khairul Ummah FC",
+            c3K:"প্রথম ম্যাচ", c3V:"৬ নভেম্বর ২০২৬ · বনাম Madrasha Khairul Ummah FC", cCap:"দলের সঙ্গে — The Bachelors FC",
             mKicker:"ব্যক্তিত্ব", mTitle:"ব্যক্তিত্ব",
             mIntro:"আমার পার্সোনালিটি টাইপ INTJ-A — “The Architect” (16Personalities)।",
             tr1K:"শক্তি", tr1V:"অন্তর্মুখী", tr1L:"বহির্মুখী", tr1R:"অন্তর্মুখী",
