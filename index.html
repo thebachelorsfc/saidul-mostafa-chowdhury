@@ -436,7 +436,39 @@
       footer{background:#070d1b;color:#8f99b0;padding:30px 0 42px}
       .foot-in{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between;max-width:1080px;margin:0 auto;padding:0 22px;font-size:.95rem}
       .foot-in .gold{color:var(--gold);font-weight:600}
-    </style>
+    
+      /* ---------- timeline redesign 2026-11-22 ---------- */
+      .tl{padding-left:44px;max-width:760px;margin-top:36px}
+      .tl::before{left:10px;width:3px;background:linear-gradient(180deg,#b98a1e,#e6b93f 34%,#e7dcbf);box-shadow:0 0 10px rgba(230,185,63,.35)}
+      .tl::after{content:"";position:absolute;left:10px;top:12px;bottom:12px;width:3px;border-radius:3px;background:linear-gradient(180deg,#7a5200,#c9a227);transform-origin:top;transform:scaleY(var(--tlf,0))}
+      .tl-node{background:linear-gradient(180deg,#ffffff,#fffdf6);border:1px solid #e9dcbc;border-radius:18px;padding:18px 20px 20px;margin:0 0 16px;box-shadow:0 6px 18px rgba(90,70,20,.07);transition:box-shadow .25s,border-color .25s,background .25s}
+      .tl-node:hover{border-color:#d9c078;box-shadow:0 12px 26px rgba(90,70,20,.13)}
+      .tl-node.active{border-color:#b98a1e;border-left:4px solid #e6b93f;background:linear-gradient(180deg,#fffef9,#fdf3d7);box-shadow:0 14px 30px rgba(122,82,0,.16)}
+      .tl-node::before{left:-41px;top:24px;width:17px;height:17px;background:#fff;border:3px solid #b9ac8d;z-index:1}
+      .tl-node:hover::before,.tl-node.active::before{border-color:#7a5200;background:#e6b93f;box-shadow:0 0 0 5px rgba(230,185,63,.25)}
+      .tl-node.end{background:transparent;border:1.5px dashed #cbbd93;box-shadow:none}
+      .tl-node.end::before{border-style:dashed;background:#faf4e7;box-shadow:none}
+      .tl-date{display:inline-block;background:#f7ecd2;border:1px solid #e7d6a8;padding:4px 11px;border-radius:999px;font-size:.74rem}
+      .tl-node.end .tl-date{background:transparent;border-style:dashed}
+      .tl-title{font-size:1.45rem;margin:9px 0 5px}
+      .tl-panel{position:relative;overflow:hidden;border:1px solid #eadfc6;background:radial-gradient(120% 150% at 88% -10%,#fdf3d7 0%,#ffffff 58%);box-shadow:0 16px 36px rgba(90,70,20,.13)}
+      .tl-panel::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#7a5200,#e6b93f,#7a5200)}
+      .tlp-date{display:inline-block;background:#f7ecd2;border:1px solid #e7d6a8;padding:4px 11px;border-radius:999px;font-size:.74rem}
+      .tlp-title{font-size:1.7rem;margin:10px 0 6px}
+      .tlp-btn{transition:all .2s}
+      .tlp-btn:hover:not(:disabled){background:#7a5200;border-color:#7a5200;color:#fff}
+      @media (max-width:560px){.tl{padding-left:38px}.tl::before,.tl::after{left:8px}.tl-node{padding:16px 16px 18px}.tl-node::before{left:-37px}.tlp-title{font-size:1.45rem}}
+      @media (prefers-reduced-motion:no-preference){
+        .tl-node.active::before{animation:tlPulse 2.2s ease-out infinite}
+        @keyframes tlPulse{0%{box-shadow:0 0 0 0 rgba(230,185,63,.45)}70%{box-shadow:0 0 0 11px rgba(230,185,63,0)}100%{box-shadow:0 0 0 0 rgba(230,185,63,0)}}
+      }
+      @supports (animation-timeline: view()){
+        @media (prefers-reduced-motion:no-preference){
+          .tl-node{animation:tlRise linear both;animation-timeline:view();animation-range:entry 5% entry 65%}
+          @keyframes tlRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        }
+      }
+</style>
   <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://saidul-mostafa-chowdhury.vercel.app/" />
 <meta property="og:type" content="profile" />
@@ -1406,5 +1438,13 @@
         syncTlPanel();
       })();
     </script>
-  </body>
+  
+  <script>
+    (function(){var tl=document.getElementById("timeline");if(!tl)return;var tick=false;
+      function upd(){var r=tl.getBoundingClientRect();var total=r.height-24;var done=(window.innerHeight*0.75)-r.top-12;
+        done=Math.max(0,Math.min(done,total));tl.style.setProperty("--tlf",total>0?(done/total):0);tick=false;}
+      function on(){if(!tick){tick=true;requestAnimationFrame(upd);}}
+      window.addEventListener("scroll",on,{passive:true});window.addEventListener("resize",on);upd();})();
+  </script>
+</body>
 </html>
