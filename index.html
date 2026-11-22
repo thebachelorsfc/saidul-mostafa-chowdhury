@@ -523,6 +523,31 @@
         .name .gold{animation:none}
         #top::after{display:none}
       }
+
+      /* ---------- HERO CAROUSEL (preview) ---------- */
+      .hero-photo::before{display:none}
+      .hcar{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:20px;border:1px solid rgba(230,185,63,.35);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+      .hcar::-webkit-scrollbar{display:none}
+      .hslide{flex:0 0 100%;scroll-snap-align:center;display:flex;align-items:center}
+      .hslide img{display:block;width:100%;height:auto;border:0;border-radius:0;box-shadow:none}
+      .hcap{margin-top:12px;text-align:center;min-height:1.1em}
+      .hcap-item{display:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+      .hcap-item.on{display:block}
+      body.bn .hcap-item{letter-spacing:.03em}
+      .hdots{display:flex;gap:8px;justify-content:center;margin-top:11px}
+      .hdot{width:9px;height:9px;border-radius:50%;border:1.5px solid rgba(230,185,63,.85);background:transparent;padding:0;cursor:pointer;transition:all .25s}
+      .hdot.on{background:#e6b93f;transform:scale(1.25)}
+
+      /* ---------- HERO CAROUSEL MOTION (preview) ---------- */
+      .hslide{overflow:hidden}
+      .hdot{transition:all .35s}
+      .hdot.on{width:22px;border-radius:999px;transform:none}
+      @media (prefers-reduced-motion: no-preference){
+        .hslide img{animation:kenburns 7s ease-in-out infinite alternate}
+        @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.055)}}
+        .hcap-item.on{animation:capIn .45s cubic-bezier(.22,.8,.3,1)}
+        @keyframes capIn{from{opacity:0;transform:translateY(6px)}to{opacity:.75;transform:translateY(0)}}
+      }
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://saidul-mostafa-chowdhury.vercel.app/" />
@@ -583,8 +608,18 @@
           <p class="essence" id="essenceLine">Assistant Teacher (English) · BA (Hons) in English Language &amp; Literature, Port City International University ’26 · Founder, The Bachelors FC</p>
           <p class="hero-tag rv in" data-i18n="heroTag">Chattogram, Bangladesh</p>
           <figure class="hero-photo rv in">
-            <img src="batchmates.jpg" alt="With batchmates from the English 28th batch, Port City International University" fetchpriority="high">
-            <figcaption data-i18n="cCap">With my batchmates — English 28th Batch, Port City International University</figcaption>
+            <div class="hcar" id="hcar">
+              <div class="hslide"><img src="batchmates.jpg" alt="With batchmates from the English 28th batch, Port City International University" fetchpriority="high"></div>
+              <div class="hslide"><img src="last-class.jpg" alt="The last undergraduate class with my English 28th batch batchmates in our classroom, Port City International University" loading="lazy"></div>
+            </div>
+            <div class="hcap">
+              <span class="hcap-item on" data-i18n="cCap">With my batchmates — English 28th Batch, Port City International University</span>
+              <span class="hcap-item" data-i18n="cCap2">The last class — with my English 28th Batch batchmates, Port City International University</span>
+            </div>
+            <div class="hdots">
+              <button class="hdot on" type="button" aria-label="Photo 1"></button>
+              <button class="hdot" type="button" aria-label="Photo 2"></button>
+            </div>
           </figure>
           <p class="scroll-cue"><span data-i18n="scrollCue">Scroll to explore</span><span class="arr">↓</span></p>
         </div>
@@ -1058,6 +1093,7 @@
             c1K:"Captain since", c1V:"29 October 2026",
             c2K:"Position", c2V:"Goalkeeper · Shirt #99",
             c3K:"First match", c3V:"6 Nov 2026 · vs Madrasha Khairul Ummah FC", cCap:"With my batchmates — English 28th Batch, Port City International University",
+            cCap2:"The last class — with my English 28th Batch batchmates, Port City International University",
             mKicker:"Personality", mTitle:"Personality",
             mIntro:"My personality type, as assessed by 16Personalities, is INTJ-A — “The Architect”.",
             tr1K:"Energy", tr1V:"Introverted", tr1L:"Extraverted", tr1R:"Introverted",
@@ -1168,6 +1204,7 @@
             c1K:"অধিনায়ক যেদিন থেকে", c1V:"২৯ অক্টোবর ২০২৬",
             c2K:"পজিশন", c2V:"গোলকিপার · জার্সি #৯৯",
             c3K:"প্রথম ম্যাচ", c3V:"৬ নভেম্বর ২০২৬ · বনাম Madrasha Khairul Ummah FC", cCap:"আমার ব্যাচমেটদের সঙ্গে — ইংরেজি ২৮তম ব্যাচ, পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি",
+            cCap2:"শেষ ক্লাস — আমার ইংরেজি ২৮তম ব্যাচের ব্যাচমেটদের সঙ্গে, পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি",
             mKicker:"ব্যক্তিত্ব", mTitle:"ব্যক্তিত্ব",
             mIntro:"16Personalities-এর মূল্যায়ন অনুযায়ী আমার পার্সোনালিটি টাইপ INTJ-A — “The Architect”।",
             tr1K:"শক্তি", tr1V:"অন্তর্মুখী", tr1L:"বহির্মুখী", tr1R:"অন্তর্মুখী",
@@ -1453,5 +1490,23 @@
       })();
     </script>
   
+
+  <script>
+    (function(){var car=document.getElementById("hcar");if(!car)return;
+      var caps=document.querySelectorAll(".hcap-item"),dots=document.querySelectorAll(".hdot"),idx=0,tick=false;
+      function set(i){idx=i;caps.forEach(function(c,j){c.classList.toggle("on",j===i)});dots.forEach(function(d,j){d.classList.toggle("on",j===i)});}
+      car.addEventListener("scroll",function(){if(tick)return;tick=true;requestAnimationFrame(function(){
+        var i=Math.round(car.scrollLeft/car.clientWidth);if(i!==idx)set(Math.max(0,Math.min(caps.length-1,i)));tick=false;});},{passive:true});
+      dots.forEach(function(d,j){d.addEventListener("click",function(){car.scrollTo({left:j*car.clientWidth,behavior:"smooth"});});});
+      var mq=window.matchMedia("(prefers-reduced-motion: reduce)"),timer=null,resume=null;
+      function go(i){car.scrollTo({left:i*car.clientWidth,behavior:"smooth"});}
+      function play(){if(mq.matches||timer)return;timer=setInterval(function(){if(!document.hidden)go((idx+1)%caps.length);},4500);}
+      function stop(){if(timer){clearInterval(timer);timer=null;}}
+      function pause(){stop();clearTimeout(resume);resume=setTimeout(play,9000);}
+      car.addEventListener("pointerdown",pause);
+      car.addEventListener("wheel",pause,{passive:true});
+      play();
+    })();
+  </script>
 </body>
 </html>
