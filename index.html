@@ -791,44 +791,7 @@
               <button class="tlp-btn" id="tlNext" type="button" data-i18n="tlNext">Next →</button>
             </div>
           </div>
-          <div class="tl rv" id="timeline">
-            <button class="tl-node active" type="button">
-              <span class="tl-date" data-i18n="tl0D">Jul 2017 – May 2019</span>
-              <div class="tl-title" data-i18n="tl0T">BNCC Cadet</div>
-              <p class="tl-desc" data-i18n="tl0S">Bangladesh National Cadet Corps, Navy Wing — Hazera-Taju Degree College Platoon, Chandgaon, Chittagong. It was here that my discipline was first instilled.</p>
-            </button>
-            <button class="tl-node" type="button">
-              <span class="tl-date" data-i18n="tl1D">May 2022 – present</span>
-              <div class="tl-title" data-i18n="tl1T">Campus Ambassador — Tobacco Free We</div>
-              <p class="tl-desc" data-i18n="tl1S">I promote tobacco-free awareness on campus and organise campaigns and events to engage students. I continue to serve in this role.</p>
-            </button>
-            <button class="tl-node" type="button">
-              <span class="tl-date" data-i18n="tlPD">Aug 2025 – May 2026</span>
-              <div class="tl-title" data-i18n="tlPT">Member — PCIU English Club (PCEC)</div>
-              <p class="tl-desc" data-i18n="tlPS">As a member of the PCIU English Club (PCEC), I assisted in the organisation of club events and English workshops.</p>
-            </button>
-            <button class="tl-node" type="button">
-              <span class="tl-date" data-i18n="tl2D">2026</span>
-              <div class="tl-title" data-i18n="tl2T">I graduate from PCIU</div>
-              <p class="tl-desc" data-i18n="tl2S">B.A. in English Language and Literature, Port City International University — Class of 2026. My undergraduate thesis, “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”, was supervised by Md. Rashed Khan Milon.</p>
-            </button>
-            <button class="tl-node" type="button">
-              <span class="tl-date" data-i18n="tl3D">April 2026</span>
-              <div class="tl-title" data-i18n="tl3T">Assistant Teacher (English)</div>
-              <p class="tl-desc" data-i18n="tl3S">I joined Madrasha Khairul Ummah, Chittagong, as Assistant Teacher (English), teaching students from Grades 3 to 10.</p>
-            </button>
-            <button class="tl-node" type="button">
-              <span class="tl-date" data-i18n="tl4D">July 2026</span>
-              <div class="tl-title" data-i18n="tl4T">I found The Bachelors FC</div>
-              <p class="tl-desc" data-i18n="tl4S">Founder &amp; Captain of the club, founded in Khulshi — and the same month, I become Distributor &amp; Ambassador for SHOLO, an independent youth organisation (sholo.org): I distribute its publications and represent it at PCIU and in my Khulshi area.</p>
-            </button>
-            <div class="tl-node end">
-              <span class="tl-date" data-i18n="tl9D">To come</span>
-              <div class="tl-title" data-i18n="tl9T">The next chapter is being written</div>
-              <p class="tl-desc" data-i18n="tl9S">This record remains in progress; further chapters will follow.</p>
-            </div>
-          </div>
-        </div>
+                  </div>
       </section>
 
       <!-- ================= WORKS ================= -->
@@ -1389,31 +1352,27 @@
           });
         });
 
-        /* ---- timeline: nodes + focused panel ---- */
-        var tlNodes = Array.prototype.slice.call(document.querySelectorAll(".tl-node:not(.end)"));
+        /* ---- timeline: focused panel (data-driven) ---- */
+        var TL_KEYS = ["tl0", "tl1", "tlP", "tl2", "tl3", "tl4"];
         var tlIndex = 0;
         function bnDigits(s){
           if (lang !== "bn") return s;
-          return s.replace(/[0-9]/g, function(d){ return "০১২৩৪৫৬৭৮৯"[+d]; });
+          return s.replace(/[0-9]/g, function(d){ return "\u09e6\u09e7\u09e8\u09e9\u09ea\u09eb\u09ec\u09ed\u09ee\u09ef"[+d]; });
         }
         function syncTlPanel(){
-          var node = tlNodes[tlIndex];
-          if (!node) return;
-          document.getElementById("tlpDate").textContent = node.querySelector(".tl-date").textContent;
-          document.getElementById("tlpTitle").textContent = node.querySelector(".tl-title").textContent;
-          document.getElementById("tlpDesc").textContent = node.querySelector(".tl-desc").textContent;
-          document.getElementById("tlpCount").textContent = bnDigits((tlIndex + 1) + " / " + tlNodes.length);
+          var d = I18N[lang], k = TL_KEYS[tlIndex];
+          if (!d || !k) return;
+          document.getElementById("tlpDate").textContent = d[k + "D"];
+          document.getElementById("tlpTitle").textContent = d[k + "T"];
+          document.getElementById("tlpDesc").textContent = d[k + "S"];
+          document.getElementById("tlpCount").textContent = bnDigits((tlIndex + 1) + " / " + TL_KEYS.length);
           document.getElementById("tlPrev").disabled = tlIndex === 0;
-          document.getElementById("tlNext").disabled = tlIndex === tlNodes.length - 1;
+          document.getElementById("tlNext").disabled = tlIndex === TL_KEYS.length - 1;
         }
         function selectTl(i){
-          tlIndex = Math.max(0, Math.min(tlNodes.length - 1, i));
-          tlNodes.forEach(function(n, j){ n.classList.toggle("active", j === tlIndex); });
+          tlIndex = Math.max(0, Math.min(TL_KEYS.length - 1, i));
           syncTlPanel();
         }
-        tlNodes.forEach(function(node, i){
-          node.addEventListener("click", function(){ selectTl(i); });
-        });
         document.getElementById("tlPrev").addEventListener("click", function(){ selectTl(tlIndex - 1); });
         document.getElementById("tlNext").addEventListener("click", function(){ selectTl(tlIndex + 1); });
 
@@ -1439,12 +1398,5 @@
       })();
     </script>
   
-  <script>
-    (function(){var tl=document.getElementById("timeline");if(!tl)return;var tick=false;
-      function upd(){var r=tl.getBoundingClientRect();var total=r.height-24;var done=(window.innerHeight*0.75)-r.top-12;
-        done=Math.max(0,Math.min(done,total));tl.style.setProperty("--tlf",total>0?(done/total):0);tick=false;}
-      function on(){if(!tick){tick=true;requestAnimationFrame(upd);}}
-      window.addEventListener("scroll",on,{passive:true});window.addEventListener("resize",on);upd();})();
-  </script>
 </body>
 </html>
