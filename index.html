@@ -405,6 +405,16 @@
       body.bn .thesis .thesis-k{letter-spacing:.02em}
       .thesis .thesis-t{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700;font-size:1.22rem;line-height:1.45;color:#171b26;margin:8px 0 6px}
       .thesis .thesis-s{color:#4f5766;margin:0;font-size:1rem;line-height:1.55}
+      .article-panel{margin-top:18px;border:1.5px solid #e6b93f;background:linear-gradient(180deg,#fffdf4,#fff8e1);border-radius:14px;padding:18px 20px}
+      .article-panel .art-k{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.74rem;color:#8f6f14}
+      body.bn .article-panel .art-k{letter-spacing:.02em}
+      .article-panel .art-status{margin:8px 0 0;color:#333947;line-height:1.55}
+      .article-panel .art-abs{margin:12px 0 0;padding-left:14px;border-left:3px solid #e6b93f;font-style:italic;color:#4f5766;line-height:1.65}
+      .art-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+      .art-chip{border:1.5px solid #ddd0ac;background:#fff;border-radius:999px;padding:6px 13px;font-size:.86rem;font-weight:600;color:#5f5a4d}
+      .art-btns{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:16px}
+      .art-btns .ext-link{margin-top:0}
+      .art-orcid{font-weight:700;color:#0d1f4b;text-decoration:none;border-bottom:2px solid #e6b93f;padding:10px 2px;display:inline-flex;align-items:center;min-height:48px}
 
       /* ---------- skills strip (teacher) ---------- */
       .skills-block{margin-top:38px}
@@ -537,6 +547,16 @@
             <div class="thesis-k" data-i18n="thesisK">My undergraduate thesis</div>
             <p class="thesis-t" data-i18n="thesisT">“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”</p>
             <p class="thesis-s" data-i18n="thesisS">Supervised by Md. Rashed Khan Milon · B.A. (Hons) English Language and Literature, PCIU</p>
+            <div class="article-panel">
+              <div class="art-k" data-i18n="artK">Journal Article · Manuscript</div>
+              <p class="art-status" data-i18n="artStatus">Developed from my undergraduate thesis — a journal-length version prepared for submission to a peer-reviewed journal.</p>
+              <blockquote class="art-abs" data-i18n="artAbs">“Ethical dilemma is not a secondary theme but the structural principle of Hardy's Tess of the d'Urbervilles. Tess is repeatedly placed in situations in which every available course of action carries loss or compromise — so that moral failure belongs less to her choices than to the unequal order within which she must choose.”</blockquote>
+              <div class="art-chips"><span class="art-chip">Thomas Hardy</span><span class="art-chip">Ethical Dilemma</span><span class="art-chip">Victorian Morality</span><span class="art-chip">Gender</span><span class="art-chip">Determinism</span></div>
+              <div class="art-btns">
+                <a class="ext-link" href="virtue-on-trial-journal-article.pdf" target="_blank" rel="noopener"><span data-i18n="artRead">Read the manuscript (PDF)</span> ↗</a>
+                <a class="art-orcid" href="https://orcid.org/0009-0004-2667-2187" target="_blank" rel="noopener"><span data-i18n="artOrcid">Thesis record on ORCID</span> ↗</a>
+              </div>
+            </div>
           </div>
 
           <div class="roles rv">
@@ -797,6 +817,21 @@
           <div class="works-list">
             <article class="work rv">
               <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="wkArtK">Research · Writing</span><span class="plus">+</span></span>
+                <h3 data-i18n="wkArtT">Virtue on Trial — the Journal Article</h3>
+                <p class="wsub" data-i18n="wkArtS">My thesis, reworked as a journal article on ethics, gender and judgement in Hardy's Tess.</p>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <ul>
+                  <li data-i18n="wkArtL1"><b>Developed from</b> my B.A. (Hons) thesis at PCIU, supervised by Md. Rashed Khan Milon</li>
+                  <li data-i18n="wkArtL2"><b>Argument</b> — ethical dilemma is the novel's structural principle, not a side theme</li>
+                  <li data-i18n="wkArtL3"><b>Status</b> — manuscript prepared for submission to a peer-reviewed journal; recorded on ORCID</li>
+                </ul>
+                <a class="ext-link" href="virtue-on-trial-journal-article.pdf" target="_blank" rel="noopener"><span data-i18n="wkArtLink">Read the manuscript (PDF)</span> ↗</a>
+              </div></div>
+            </article>
+            <article class="work rv">
+              <button class="work-head" type="button" aria-expanded="false">
                 <span class="wk"><span data-i18n="wk2K">Design · Identity</span><span class="plus">+</span></span>
                 <h3 data-i18n="wk2T">Kit · Logo · Covers</h3>
                 <p class="wsub" data-i18n="wk2S">The visual identity of the club, designed by its founder.</p>
@@ -952,6 +987,8 @@
             g6K:"Languages", g6V:"Bengali · English · Hindi · Arabic", g6S:"Bengali — Native · English — Professional working proficiency (Duolingo English Score 129) · Hindi — Working knowledge (listening/speaking) · Arabic — Spoken",
             g7K:"Education", g7V:"B.A. English, PCIU", g7S:"English Language and Literature · Class of 2026",
             thesisK:"My undergraduate thesis", thesisT:"“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”", thesisS:"Supervised by Md. Rashed Khan Milon · B.A. (Hons) English Language and Literature, PCIU",
+            artK:"Journal Article · Manuscript", artStatus:"Developed from my undergraduate thesis — a journal-length version prepared for submission to a peer-reviewed journal.", artAbs:"“Ethical dilemma is not a secondary theme but the structural principle of Hardy's Tess of the d'Urbervilles. Tess is repeatedly placed in situations in which every available course of action carries loss or compromise — so that moral failure belongs less to her choices than to the unequal order within which she must choose.”", artRead:"Read the manuscript (PDF)", artOrcid:"Thesis record on ORCID",
+            wkArtK:"Research · Writing", wkArtT:"Virtue on Trial — the Journal Article", wkArtS:"My thesis, reworked as a journal article on ethics, gender and judgement in Hardy's Tess.", wkArtL1:"Developed from my B.A. (Hons) thesis at PCIU, supervised by Md. Rashed Khan Milon", wkArtL2:"Argument — ethical dilemma is the novel's structural principle, not a side theme", wkArtL3:"Status — manuscript prepared for submission to a peer-reviewed journal; recorded on ORCID", wkArtLink:"Read the manuscript (PDF)",
             rolesK:"Also on my record",
             r1:"Campus Ambassador — Tobacco Free We (তামাকমুক্ত আমরা) · since 2022",
             r2:"Distributor & Ambassador — SHOLO, independent youth organisation · since Jul 2026",
@@ -1060,6 +1097,8 @@
             g6K:"ভাষা", g6V:"বাংলা · ইংরেজি · হিন্দি · আরবি", g6S:"বাংলা — মাতৃভাষা · ইংরেজি — পেশাগত কর্মদক্ষতা (Duolingo English Score 129) · হিন্দি — কাজ চালানোর মতো জ্ঞান (শোনা/বলা) · আরবি — বলতে পারি",
             g7K:"শিক্ষা", g7V:"বি.এ. ইংরেজি, PCIU", g7S:"ইংরেজি ভাষা ও সাহিত্য · ক্লাস অব ২০২৬",
             thesisK:"আমার স্নাতক থিসিস", thesisT:"“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”", thesisS:"তত্ত্বাবধায়ক: Md. Rashed Khan Milon · বি.এ. (সম্মান) ইংরেজি ভাষা ও সাহিত্য, PCIU",
+            artK:"জার্নাল প্রবন্ধ · পাণ্ডুলিপি", artStatus:"আমার স্নাতক থিসিস থেকে তৈরি — একটি পিয়ার-রিভিউড জার্নালে জমা দেওয়ার জন্য প্রস্তুত জার্নাল-সংস্করণ।", artAbs:"“নৈতিক দ্বন্দ্ব হার্ডির Tess of the d'Urbervilles-এর কোনো গৌণ বিষয় নয়, বরং এর কাঠামোগত মূলনীতি। টেসকে বারবার এমন পরিস্থিতিতে ফেলা হয়েছে যেখানে প্রতিটি পথেই রয়েছে ক্ষতি কিংবা আপস — ফলে নৈতিক ব্যর্থতা তার নিজের পছন্দের চেয়ে বেশি সেই অসমান ব্যবস্থারই, যার ভেতরে তাকে বেছে নিতে হয়।”", artRead:"পাণ্ডুলিপিটি পড়ুন (PDF)", artOrcid:"ORCID-তে থিসিসের রেকর্ড",
+            wkArtK:"গবেষণা · লেখালেখি", wkArtT:"Virtue on Trial — the Journal Article", wkArtS:"আমার থিসিসের জার্নাল-সংস্করণ — হার্ডির Tess-এ নৈতিকতা, জেন্ডার ও সামাজিক বিচার নিয়ে।", wkArtL1:"উৎস — PCIU-তে আমার বি.এ. (সম্মান) থিসিস, তত্ত্বাবধায়ক Md. Rashed Khan Milon", wkArtL2:"মূল যুক্তি — নৈতিক দ্বন্দ্বই উপন্যাসটির কাঠামোগত মূলনীতি, কোনো পার্শ্ব-বিষয় নয়", wkArtL3:"অবস্থা — পিয়ার-রিভিউড জার্নালে জমা দেওয়ার জন্য প্রস্তুত পাণ্ডুলিপি; ORCID-তে লিপিবদ্ধ", wkArtLink:"পাণ্ডুলিপিটি পড়ুন (PDF)",
             rolesK:"আমার খাতায় আরও যা আছে",
             r1:"ক্যাম্পাস অ্যাম্বাসেডর — তামাকমুক্ত আমরা (Tobacco Free We) · ২০২২ সাল থেকে",
             r2:"Distributor & Ambassador — SHOLO, স্বতন্ত্র যুব সংগঠন · জুলাই ২০২৬ থেকে",
