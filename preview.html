@@ -1,0 +1,1478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="Saidul Mostafa Chowdhury is an Assistant Teacher (English) at Madrasha Khairul Ummah, Chattogram; a B.A. (Hons) in English Language and Literature graduate of Port City International University (PCIU); and the Founder and Captain of The Bachelors FC, Khulshi." />
+    <link rel="icon" href="data:," />
+    <title>Saidul Mostafa Chowdhury — One Man, Three Worlds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --acc:#e6b93f;
+        --gold:#e6b93f;
+        --night:#0a1122;
+        --ease:cubic-bezier(.22,.8,.3,1);
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{
+        margin:0;
+        font-family:"Source Sans 3","Hind Siliguri",system-ui,sans-serif;
+        font-size:17.5px;line-height:1.7;
+        background:var(--night);color:#f5f1e6;
+        overflow-x:hidden;
+      }
+      body.bn{font-family:"Hind Siliguri","Source Sans 3",system-ui,sans-serif}
+      ::selection{background:var(--gold);color:#0a1122}
+      .disp{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;line-height:1.05;letter-spacing:-.01em}
+      body.bn .disp{font-weight:700}
+      .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+      .narrow{max-width:730px;margin:0 auto}
+      a,button{-webkit-tap-highlight-color:transparent}
+      a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+
+      /* reveal */
+      .rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+      .rv.in{opacity:1;transform:none}
+      .rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}
+      @media (prefers-reduced-motion: reduce){
+        html{scroll-behavior:auto}
+        .rv{opacity:1;transform:none;transition:none}
+        *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+      }
+
+      /* ---------- nav: slim premium bar ---------- */
+      header.nav{
+        position:sticky;top:0;z-index:60;
+        background:rgba(7,11,24,.88);
+        backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+        border-bottom:1px solid rgba(230,185,63,.45);
+        box-shadow:0 10px 30px rgba(0,0,0,.28);
+      }
+      .nav-in{display:flex;align-items:center;gap:12px;max-width:1080px;margin:0 auto;padding:0 16px;height:60px}
+      .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0;margin-right:auto}
+      .brand-mark{width:36px;height:36px;flex-shrink:0;border-radius:50%;border:1.5px solid var(--gold);display:block;object-fit:cover;object-position:50% 12%;background:#1a2440;box-shadow:0 0 0 2px rgba(7,11,24,.9),0 0 0 3.5px rgba(230,185,63,.35),0 3px 10px rgba(0,0,0,.35)}
+      .brand-name{font-weight:600;font-size:.95rem;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+      nav.links{display:none}
+      .nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+      .lang-btn{
+        appearance:none;cursor:pointer;min-height:36px;padding:6px 15px;border-radius:999px;
+        border:1.5px solid var(--gold);background:rgba(230,185,63,.06);color:var(--gold);
+        font-family:inherit;font-weight:700;font-size:.9rem;line-height:1.2;
+      }
+      .lang-btn:hover{background:var(--gold);color:#0a1122}
+      .burger{appearance:none;cursor:pointer;width:42px;height:42px;border-radius:11px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.04);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+      .burger span{display:block;width:19px;height:2px;border-radius:2px;background:#e9e4d2;transition:transform .3s var(--ease),opacity .3s,background .3s}
+      .burger:hover{border-color:rgba(230,185,63,.6)}
+      .burger:hover span{background:var(--gold)}
+      header.nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+      header.nav.open .burger span:nth-child(2){opacity:0}
+      header.nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+      .nav-drop{display:none;background:rgba(7,11,24,.97)}
+      header.nav.open .nav-drop{display:block;animation:dropIn .35s var(--ease)}
+      @keyframes dropIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+      .drop-links{display:flex;flex-direction:column;max-width:1080px;margin:0 auto;padding:8px 12px 14px}
+      .drop-links a{
+        color:#e9e4d2;text-decoration:none;font-weight:600;font-size:.86rem;letter-spacing:.13em;text-transform:uppercase;
+        padding:15px 12px;min-height:52px;display:flex;align-items:center;border-bottom:1px solid rgba(230,185,63,.14);
+      }
+      body.bn .drop-links a{letter-spacing:.03em}
+      .drop-links a:last-child{border-bottom:0}
+      .drop-links a:hover{color:var(--gold)}
+      @media (min-width:1024px){
+        .brand{margin-right:0;flex-shrink:1}
+        nav.links{display:flex;gap:2px;flex:1;justify-content:center;min-width:0}
+        nav.links a{
+          color:#d8d2bd;text-decoration:none;font-weight:600;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;
+          padding:9px 9px;min-height:40px;display:inline-flex;align-items:center;border-radius:8px;white-space:nowrap;
+        }
+        body.bn nav.links a{letter-spacing:.02em}
+        nav.links a:hover{background:rgba(255,255,255,.07);color:var(--gold)}
+        .burger{display:none}
+        .nav-drop,header.nav.open .nav-drop{display:none}
+      }
+      @media (max-width:480px){
+        .nav-in{gap:8px;padding:0 12px}
+        .brand{gap:8px}
+        .brand-mark{width:33px;height:33px}
+        .brand-name{font-size:.83rem;letter-spacing:0}
+        .nav-actions{gap:8px}
+        .lang-btn{min-height:34px;padding:5px 11px;font-size:.84rem}
+        .burger{width:38px;height:38px}
+      }
+
+      section{padding:100px 0;scroll-margin-top:78px;position:relative}
+      .kicker{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;margin:0 0 14px}
+      body.bn .kicker{letter-spacing:.03em}
+      h2.chapter{font-size:clamp(1.9rem,5vw,2.7rem);margin:0 0 18px}
+      .lead{font-size:1.16rem;line-height:1.75}
+      .lead + .lead{margin-top:16px}
+
+      /* ---------- opening ---------- */
+      .opening{
+        min-height:78svh;display:flex;align-items:center;padding:70px 0 84px;
+        background:
+          radial-gradient(90% 60% at 85% -10%, rgba(230,185,63,.16), transparent 55%),
+          radial-gradient(70% 55% at 0% 110%, rgba(64,110,220,.14), transparent 55%),
+          linear-gradient(180deg,#0a1122,#0d1834 70%,#0a1122);
+        color:#f5f1e6;text-align:left;
+      }
+      .opening .where{color:#c9cfdd;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;display:flex;align-items:center;gap:12px}
+      body.bn .opening .where{letter-spacing:.02em}
+      .opening .where::before{content:"";width:38px;height:2px;background:var(--gold);border-radius:2px}
+      h1.name{font-size:clamp(2.4rem,8vw,4.8rem);margin:20px 0 8px;text-transform:uppercase}
+      h1.name .gold{color:var(--gold)}
+      .essence{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:600;font-size:clamp(1.12rem,3vw,1.5rem);line-height:1.35;margin:22px 0 8px;max-width:22em}
+      body.bn .essence{font-weight:600}
+      .essence .w{opacity:0;display:inline-block;transform:translateY(12px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+      .essence.play .w{opacity:1;transform:none}
+      .hero-tag{margin:16px 0 0;color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(.95rem,2.6vw,1.15rem)}
+      .hero-photo{margin:36px auto 0;max-width:460px}
+      .hero-photo img{display:block;width:100%;border-radius:20px;border:1px solid rgba(230,185,63,.35);box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+      .hero-photo figcaption{margin-top:12px;text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+      body.bn .hero-tag{letter-spacing:.04em}
+      .scroll-cue{margin-top:52px;color:#8f99b0;font-weight:600;display:flex;align-items:center;gap:10px;font-size:.98rem}
+      .scroll-cue .arr{color:var(--gold);display:inline-block;animation:bob 1.9s ease-in-out infinite;font-size:1.2rem}
+      @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+      /* ---------- light chapters (essence / journey / works) ---------- */
+      .paper{background:#faf4e7;color:#20242f}
+      .paper .kicker{color:#7a5200}
+      .paper .lead{color:#333947}
+      .paper .lead strong{color:#141821}
+
+      .glance{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:36px 0 8px}
+      @media (max-width:640px){.glance{grid-template-columns:1fr}}
+      .g-card{background:#fff;border-radius:18px;padding:20px 22px;box-shadow:0 10px 30px rgba(90,70,20,.10);display:flex;gap:16px;align-items:flex-start}
+      .g-ic{width:48px;height:48px;flex-shrink:0;border-radius:14px;display:grid;place-items:center;color:#fff}
+      .g-card .gk{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:#5f5a4d}
+      body.bn .g-card .gk{letter-spacing:.02em}
+      .g-card .gv{font-weight:700;font-size:1.12rem;line-height:1.35;color:#171b26}
+      .g-card .gs{color:#4f5766;font-size:.98rem;line-height:1.5}
+
+      /* trait bars (shared track) */
+      .track{height:10px;background:rgba(255,255,255,.16);border-radius:99px;margin-top:7px;overflow:hidden}
+      .track .fill{height:100%;width:var(--w);border-radius:99px;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform 1.2s var(--ease)}
+      .in .track .fill{transform:scaleX(1)}
+
+      /* ---------- worlds ---------- */
+      .world{color:#f4f1e6;overflow:hidden}
+      .world .kicker{color:var(--wacc)}
+      .world-word{font-size:clamp(2.2rem,7vw,4rem);margin:0;text-transform:uppercase;color:#fff}
+      .world-word .thin{color:var(--wacc)}
+      .world .story{font-size:1.16rem;line-height:1.78;color:var(--wsoft);max-width:46em}
+      .world .story strong{color:#fff}
+      .world .story + .story{margin-top:14px}
+      /* Polish pack 2026-11-19: soft seams, section numbers, drop cap, hover lift, work images */
+      main{counter-reset:sec}
+      #story,#world-teacher,#world-founder,#world-captain,#mind,#skills,#offduty,#journey,#works,#ask{counter-increment:sec}
+      #story .kicker::before,.world .kicker::before,#mind .kicker::before,#offduty .kicker::before,#journey .kicker::before,#works .kicker::before,#ask .kicker::before{content:counter(sec,decimal-leading-zero)" · ";opacity:.6}
+      #skills .skills-k::before{content:counter(sec,decimal-leading-zero)" · ";opacity:.6}
+      main>section:not(.opening){box-shadow:inset 0 26px 30px -26px rgba(6,10,24,.30)}
+      body:not(.bn) #story .lead::first-letter{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700;font-size:3.05em;float:left;line-height:.82;padding:5px 12px 0 0;color:#7a5200}
+      .tile{transition:transform .35s ease,box-shadow .35s ease}
+      .tile:hover{transform:translateY(-4px);box-shadow:0 18px 34px -16px rgba(0,0,0,.45)}
+      .skill-chip{transition:background .25s,color .25s,border-color .25s,transform .25s ease}
+      .skill-chip:hover{transform:translateY(-2px)}
+      .work{transition:box-shadow .35s ease}
+      .work:hover{box-shadow:0 18px 40px rgba(90,70,20,.14)}
+      .c-med .ring{transition:transform .3s ease,box-shadow .3s ease}
+      .c-med:hover .ring{transform:translateY(-4px);box-shadow:0 14px 28px -10px rgba(0,0,0,.5)}
+      .work-img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:2px 0 16px}
+      @media (prefers-reduced-motion:reduce){.tile,.skill-chip,.c-med .ring{transition:none}}
+      .cap-photo{margin:36px 0 0}
+      .cap-photo img{display:block;width:100%;max-width:520px;margin:0 auto;border-radius:18px;border:1px solid rgba(255,255,255,.16);box-shadow:0 24px 50px -18px rgba(0,0,0,.55)}
+      .cap-photo figcaption{margin-top:12px;text-align:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+      .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:14px;margin-top:34px}
+      @media (max-width:760px){.tiles{grid-template-columns:1fr}}
+      .tile{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:20px 22px}
+      .tile .tk{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:var(--wacc);margin-bottom:7px}
+      body.bn .tile .tk{letter-spacing:.02em}
+      .tile .tv{font-weight:600;font-size:1.06rem;line-height:1.5;color:#fff}
+      .cta-link{
+        display:inline-flex;align-items:center;gap:10px;margin-top:30px;min-height:52px;padding:13px 26px;border-radius:999px;
+        background:var(--wacc);color:#10131c;font-weight:700;text-decoration:none;font-size:1.02rem;
+        transition:transform .25s var(--ease);
+      }
+      .cta-link:hover{transform:translateY(-2px)}
+
+      .w-teacher{--wacc:#f0b64a;--wsoft:#d9e2cf;background:linear-gradient(180deg,#123a22,#0d2c1a 60%,#0e3320)}
+      .w-founder{--wacc:#e6b93f;--wsoft:#c3cde6;background:linear-gradient(180deg,#0d1f4b,#0a173a 60%,#0c1e46)}
+      .w-captain{--wacc:#bfe8c8;--wsoft:#cfe6d4;background:
+        repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 72px, transparent 72px 144px),
+        linear-gradient(180deg,#10512a,#0a3a1e 60%,#0d4726)}
+
+      /* ---------- mind ---------- */
+      .mind{background:linear-gradient(180deg,#2a1650,#1a0d38 65%,#22104a);color:#efeaf9;--wacc:#c4a6f7;--wsoft:#cfc3ea}
+      .mind .kicker{color:#c4a6f7}
+      .letter-row{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 18px}
+      .lchip{
+        appearance:none;cursor:pointer;min-width:76px;min-height:76px;padding:10px 14px;border-radius:18px;
+        background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.22);color:#fff;
+        display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+        font-family:inherit;transition:border-color .25s,background .25s,transform .25s;
+      }
+      .lchip:hover{transform:translateY(-2px)}
+      .lchip .L{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.7rem;line-height:1}
+      .lchip .P{color:#c4a6f7;font-weight:700;font-size:.85rem}
+      .lchip.active{border-color:#c4a6f7;background:rgba(196,166,247,.16);box-shadow:inset 0 0 0 1px #c4a6f7}
+      .letter-panel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:28px;max-width:760px}
+      .letter-panel h3{margin:0;font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.6rem}
+      body.bn .letter-panel h3{font-weight:700}
+      .letter-panel h3 .pct{color:#c4a6f7}
+      .letter-panel p{margin:12px 0 0;color:#ddd3f2;font-size:1.08rem;line-height:1.75}
+      .mind-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;margin-top:52px;align-items:start}
+      @media (max-width:860px){.mind-grid{grid-template-columns:1fr}}
+      .tbar{margin-bottom:24px}
+      .tbar .t-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+      .tbar .t-name{font-weight:600;font-size:1rem}
+      .tbar .t-name b{color:#c4a6f7}
+      .tbar .t-pct{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem}
+      .tbar .track{background:rgba(255,255,255,.15);height:12px}
+      .tbar .fill{background:#c4a6f7}
+      .tbar .t-ends{display:flex;justify-content:space-between;color:#a493cc;font-size:.85rem;font-weight:600;margin-top:6px}
+      .tbar .t-ends .win{color:#e6defa}
+      .list-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:24px 26px}
+      .list-box + .list-box{margin-top:16px}
+      .list-box h4{margin:0 0 12px;font-size:1.05rem;font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700}
+      body.bn .list-box h4{font-weight:600}
+      .list-box.good h4{color:#c4a6f7}
+      .list-box ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+      .list-box li{color:#ddd3f2;padding-left:22px;position:relative;font-size:1.02rem;line-height:1.55}
+      .list-box li::before{content:"";position:absolute;left:2px;top:.6em;width:8px;height:8px;border-radius:50%;background:#c4a6f7}
+      .list-box.warn li::before{background:transparent;border:2px solid #a493cc}
+      .mind-note{margin-top:26px;color:#b3a5d6;font-size:.98rem;line-height:1.65;max-width:62ch}
+      .pascal{margin-top:22px;font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-size:1.3rem;font-weight:700;color:#fff}
+      .pascal span{display:block;font-family:"Source Sans 3","Hind Siliguri",sans-serif;font-size:.9rem;font-weight:600;color:#a493cc;margin-top:4px}
+      .pascal .pq{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-size:1.3rem;font-weight:700;color:#fff;margin-top:0}
+
+      /* ---------- journey ---------- */
+      .tl{position:relative;margin-top:44px;padding-left:34px;max-width:720px}
+      .tl::before{content:"";position:absolute;left:9px;top:12px;bottom:12px;width:3px;border-radius:3px;background:#e3d9c2}
+      .tl-node{
+        position:relative;display:block;width:100%;text-align:left;background:none;border:0;cursor:pointer;
+        font:inherit;color:inherit;padding:10px 14px 26px;border-radius:14px;
+      }
+      .tl-node::before{content:"";position:absolute;left:-32px;top:16px;width:15px;height:15px;border-radius:50%;background:#faf4e7;border:3.5px solid #b9ac8d;transition:all .25s}
+      .tl-node:hover::before,.tl-node.active::before{border-color:#7a5200;background:#e6b93f;transform:scale(1.15)}
+      .tl-date{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;color:#7a5200}
+      body.bn .tl-date{letter-spacing:.02em}
+      .tl-title{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.35rem;margin:3px 0 4px;color:#171b26}
+      body.bn .tl-title{font-weight:700}
+      .tl-desc{color:#3f4657;margin:0;max-width:56ch;opacity:.88;transition:opacity .25s}
+      .tl-node.active .tl-desc,.tl-node:hover .tl-desc{opacity:1}
+      .tl-node.end{cursor:default}
+      .tl-node.end::before{border-style:dashed;background:transparent}
+      .tl-node.end .tl-title{color:#5f5a4d}
+
+      /* ---------- works ---------- */
+      .works-list{display:grid;gap:16px;max-width:820px;margin-top:36px}
+      .work{background:#fff;border-radius:20px;box-shadow:0 10px 30px rgba(90,70,20,.09);overflow:hidden}
+      .work-head{width:100%;appearance:none;background:none;border:0;cursor:pointer;text-align:left;font:inherit;color:#171b26;padding:24px 26px;display:block;min-height:48px}
+      .work-head .wk{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:#7a5200;display:flex;justify-content:space-between;align-items:center;gap:12px}
+      body.bn .work-head .wk{letter-spacing:.02em}
+      .work-head .plus{font-size:1.5rem;color:#b9ac8d;transition:transform .35s var(--ease);font-weight:400}
+      .work.open .plus{transform:rotate(45deg);color:#7a5200}
+      .work-head h3{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.45rem;margin:8px 0 5px}
+      body.bn .work-head h3{font-weight:700}
+      .work-head .wsub{color:#4f5766;margin:0;font-size:1.02rem}
+      .work-body{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+      .work-body-in{padding:4px 26px 26px}
+      .work-body ul{margin:10px 0;padding:0;list-style:none;display:grid;gap:9px}
+      .work-body li{color:#3c4252;padding-left:20px;position:relative;line-height:1.6}
+      .work-body li::before{content:"";position:absolute;left:0;top:.58em;width:8px;height:8px;border-radius:50%;background:#e6b93f}
+      .work-body li b{color:#171b26}
+      .ext-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;min-height:48px;padding:11px 22px;border-radius:999px;background:#0d1f4b;color:#fff;text-decoration:none;font-weight:700}
+      .ext-link:hover{background:#16295c}
+
+      /* ---------- contact (premium) ---------- */
+      .closing{
+        background:
+          radial-gradient(85% 55% at 88% -8%, rgba(230,185,63,.14), transparent 55%),
+          radial-gradient(70% 50% at 0% 108%, rgba(64,110,220,.12), transparent 55%),
+          linear-gradient(180deg,#0a1122,#0d1834 55%,#0a1122);
+        color:#f5f1e6;text-align:left;
+        border-top:1px solid rgba(230,185,63,.28);
+        padding:52px 0 56px;
+      }
+      .closing .essence{margin-top:0;font-size:clamp(1.35rem,3.4vw,1.85rem);line-height:1.32;max-width:24em}
+      .closing .reach{color:#c9cfdd;font-size:1.08rem;line-height:1.7;max-width:52ch;margin:16px 0 0}
+      .closing .c-rule{width:52px;height:2px;border-radius:2px;background:var(--gold);margin:26px 0 30px;opacity:.9}
+      .c-strip{display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:flex-start;gap:4px;width:100%;max-width:920px;margin:0 auto}
+      .c-med{
+        display:flex;flex-direction:column;align-items:center;gap:7px;flex:1 1 0;min-width:0;
+        text-decoration:none;color:#fff;
+      }
+      .c-med .ring{
+        width:48px;height:48px;border-radius:50%;flex-shrink:0;
+        border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);
+        background:radial-gradient(circle at 32% 26%,rgba(230,185,63,.22),rgba(10,17,34,.92) 68%);
+        box-shadow:inset 0 0 0 3px rgba(7,11,24,.9),inset 0 0 0 4px rgba(230,185,63,.28), 0 6px 18px rgba(0,0,0,.35);
+        transition:transform .28s var(--ease),box-shadow .28s,border-color .28s,background .28s;
+      }
+      .c-med .ring svg{display:block;width:20px;height:20px}
+      .c-med .cl{
+        font-weight:700;letter-spacing:.07em;text-transform:uppercase;font-size:.52rem;color:#9aa5bd;
+        text-align:center;line-height:1.3;transition:color .28s;white-space:nowrap;max-width:100%;
+      }
+      body.bn .c-med .cl{letter-spacing:.02em}
+      .c-med:hover .ring,.c-med:focus-visible .ring{
+        transform:translateY(-3px);border-color:#f3cd55;
+        box-shadow:inset 0 0 0 3px rgba(7,11,24,.9),inset 0 0 0 4px rgba(230,185,63,.4), 0 10px 26px rgba(0,0,0,.45), 0 0 22px rgba(230,185,63,.35);
+      }
+      .c-med:hover .cl,.c-med:focus-visible .cl{color:var(--gold)}
+      .c-med:active .ring{transform:translateY(-1px) scale(.97)}
+      @media (min-width:640px){
+        .c-strip{gap:10px;justify-content:center}
+        .c-med{flex:0 1 96px}
+        .c-med .ring{width:56px;height:56px}
+        .c-med .ring svg{width:23px;height:23px}
+        .c-med .cl{font-size:.58rem;letter-spacing:.12em}
+      }
+      @media (max-width:360px){
+        .c-strip{gap:2px}
+        .c-med .ring{width:44px;height:44px}
+        .c-med .ring svg{width:18px;height:18px}
+        .c-med .cl{font-size:.48rem;letter-spacing:.04em}
+      }
+      /* ---------- scroll progress ---------- */
+      .pbar{position:fixed;top:0;left:0;right:0;height:3px;z-index:90;pointer-events:none}
+      .pbar-fill{height:100%;width:100%;background:var(--acc);transform:scaleX(0);transform-origin:left center;transition:transform .12s linear,background .3s}
+
+      /* ---------- ask chowdhury ---------- */
+      .work.ask .work-head h3{font-size:1.28rem;line-height:1.35}
+      .qa-a{color:#3c4252;line-height:1.7;margin:4px 0 0;font-size:1.05rem}
+
+      /* ---------- mind: tappable trait bars ---------- */
+      .tbar{cursor:pointer;border-radius:12px;padding:10px 12px;margin-bottom:16px;transition:background .25s}
+      .tbar:hover{background:rgba(255,255,255,.05)}
+      .tbar:focus-visible{outline:3px solid #c4a6f7;outline-offset:2px}
+      .tbar.sel{background:rgba(196,166,247,.13)}
+      .mbar-hint{color:#a493cc;font-size:.95rem;margin:0 0 20px;font-weight:600;line-height:1.55}
+
+      /* ---------- journey: focused panel ---------- */
+      .tl-panel{background:#fff;border-radius:20px;box-shadow:0 12px 32px rgba(90,70,20,.12);padding:24px 26px;max-width:720px;margin-top:38px}
+      .tlp-date{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;color:#7a5200}
+      body.bn .tlp-date{letter-spacing:.02em}
+      .tlp-title{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.5rem;margin:4px 0 6px;color:#171b26;line-height:1.2}
+      body.bn .tlp-title{font-weight:700}
+      .tlp-desc{color:#4c5262;margin:0;line-height:1.65}
+      .tlp-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px}
+      .tlp-btn{appearance:none;cursor:pointer;min-height:48px;padding:10px 20px;border-radius:999px;border:1.5px solid #b9ac8d;background:transparent;color:#171b26;font-family:inherit;font-weight:700;font-size:.98rem}
+      .tlp-btn:hover:not(:disabled){border-color:#7a5200;color:#7a5200}
+      .tlp-btn:disabled{opacity:.35;cursor:default}
+      .tlp-count{font-weight:700;color:#5f5a4d;font-size:.95rem}
+
+      /* ---------- roles strip ---------- */
+      .roles{margin-top:30px}
+      .roles .rk{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:#5f5a4d;margin:0 0 12px}
+      body.bn .roles .rk{letter-spacing:.02em}
+      .role-chips{display:flex;flex-wrap:wrap;gap:10px}
+      .role-chip{background:#fff;border:1.5px solid #ddd0ac;border-radius:999px;padding:11px 18px;font-weight:600;color:#333947;font-size:.98rem;box-shadow:0 4px 14px rgba(90,70,20,.06)}
+
+      /* ---------- off duty ---------- */
+      .od-sub{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.35rem;margin:38px 0 14px;color:#171b26}
+      body.bn .od-sub{font-weight:700}
+      .od-chips{display:flex;flex-wrap:wrap;gap:10px}
+      .od-chip{appearance:none;cursor:pointer;min-height:48px;padding:11px 20px;border-radius:999px;font-family:inherit;font-weight:600;font-size:1rem;color:#333947;background:#fff;border:1.5px solid #ddd0ac;transition:background .25s,color .25s,border-color .25s}
+      .od-chip:hover{border-color:#7a5200}
+      .od-chip.on{background:#7a5200;border-color:#7a5200;color:#fff}
+      .od-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+      @media (max-width:760px){.od-grid{grid-template-columns:1fr}}
+      .od-card{background:#fff;border-radius:18px;padding:20px 22px;box-shadow:0 10px 30px rgba(90,70,20,.09)}
+      .od-card .ok{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.74rem;color:#7a5200;margin-bottom:7px}
+      body.bn .od-card .ok{letter-spacing:.02em}
+      .od-card .ov{font-weight:600;font-size:1.05rem;line-height:1.55;color:#20242f}
+      .voice{margin-top:44px;background:linear-gradient(155deg,#16295c,#0b1737 60%,#081026);border-radius:22px;padding:30px;color:#f5f1e6;box-shadow:0 20px 44px rgba(10,20,50,.28)}
+      .voice .vk{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem;color:var(--gold)}
+      body.bn .voice .vk{letter-spacing:.02em}
+      .voice h3{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.55rem;margin:8px 0 6px}
+      body.bn .voice h3{font-weight:700}
+      .voice .vi{color:#c9cfdd;margin:0 0 20px;line-height:1.65}
+      .voice .vq{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700;font-size:1.25rem;line-height:1.45;margin:0 0 14px}
+      body.bn .voice .vq{font-weight:600}
+      .voice .vcard{border-top:1px solid rgba(255,255,255,.16);padding-top:18px;margin-top:18px}
+      .voice .vt{font-weight:700;color:var(--gold);font-size:1.02rem}
+      .voice .vd{color:#dfe5f2;line-height:1.7;margin:6px 0 0;font-size:1.02rem}
+
+      /* ---------- thesis strip ---------- */
+      .thesis{margin-top:16px;background:#fff;border-radius:18px;padding:22px 24px;box-shadow:0 10px 30px rgba(90,70,20,.10)}
+      .thesis .thesis-k{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:#5f5a4d}
+      body.bn .thesis .thesis-k{letter-spacing:.02em}
+      .thesis .thesis-t{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:700;font-size:1.22rem;line-height:1.45;color:#171b26;margin:8px 0 6px}
+      .thesis .thesis-s{color:#4f5766;margin:0;font-size:1rem;line-height:1.55}
+      .article-panel{margin-top:18px;border:1.5px solid #e6b93f;background:linear-gradient(180deg,#fffdf4,#fff8e1);border-radius:14px;padding:18px 20px}
+      .article-panel .art-k{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.74rem;color:#8f6f14}
+      body.bn .article-panel .art-k{letter-spacing:.02em}
+      .article-panel .art-status{margin:8px 0 0;color:#333947;line-height:1.55}
+      .article-panel .art-abs{margin:12px 0 0;padding-left:14px;border-left:3px solid #e6b93f;font-style:italic;color:#4f5766;line-height:1.65}
+      .art-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+      .art-chip{border:1.5px solid #ddd0ac;background:#fff;border-radius:999px;padding:6px 13px;font-size:.86rem;font-weight:600;color:#5f5a4d}
+      .art-btns{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:16px}
+      .art-btns .ext-link{margin-top:0}
+      .art-orcid{font-weight:700;color:#0d1f4b;text-decoration:none;border-bottom:2px solid #e6b93f;padding:10px 2px;display:inline-flex;align-items:center;min-height:48px}
+
+      /* ---------- skills strip (teacher) ---------- */
+      .skills-block{margin-top:38px}
+      .skills-sec .skills-block{margin-top:0}
+      .skills-block .skills-k{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;color:var(--wacc);margin:0 0 6px}
+      body.bn .skills-block .skills-k{letter-spacing:.02em}
+      .skills-block .skills-h{font-family:"Bricolage Grotesque","Hind Siliguri",sans-serif;font-weight:800;font-size:1.55rem;margin:0 0 8px;color:#fff}
+      body.bn .skills-block .skills-h{font-weight:700}
+      .skills-block .skills-note{color:var(--wsoft);margin:0 0 16px;font-size:1rem;line-height:1.6;max-width:52ch}
+      .skill-chips{display:flex;flex-wrap:wrap;gap:10px}
+      .skill-chip{appearance:none;cursor:pointer;min-height:48px;padding:11px 18px;border-radius:999px;font-family:inherit;font-weight:600;font-size:.98rem;color:#eef2e6;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.28);transition:background .25s,color .25s,border-color .25s}
+      .skill-chip:hover{border-color:var(--wacc)}
+      .skill-chip.on{background:var(--wacc);border-color:var(--wacc);color:#10131c}
+      .skill-chip.top{border-color:var(--wacc);color:#fff;background:rgba(240,182,74,.16)}
+      .skill-chip.top.on{background:var(--wacc);color:#10131c}
+      .skill-chip .star{color:var(--wacc);margin-right:6px}
+      .skill-chip.on .star{color:#10131c}
+
+      footer{background:#070d1b;color:#8f99b0;padding:30px 0 42px}
+      .foot-in{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between;max-width:1080px;margin:0 auto;padding:0 22px;font-size:.95rem}
+      .foot-in .gold{color:var(--gold);font-weight:600}
+    
+      /* ---------- timeline redesign 2026-11-22 ---------- */
+      .tl{padding-left:44px;max-width:760px;margin-top:36px}
+      .tl::before{left:10px;width:3px;background:linear-gradient(180deg,#b98a1e,#e6b93f 34%,#e7dcbf);box-shadow:0 0 10px rgba(230,185,63,.35)}
+      .tl::after{content:"";position:absolute;left:10px;top:12px;bottom:12px;width:3px;border-radius:3px;background:linear-gradient(180deg,#7a5200,#c9a227);transform-origin:top;transform:scaleY(var(--tlf,0))}
+      .tl-node{background:linear-gradient(180deg,#ffffff,#fffdf6);border:1px solid #e9dcbc;border-radius:18px;padding:18px 20px 20px;margin:0 0 16px;box-shadow:0 6px 18px rgba(90,70,20,.07);transition:box-shadow .25s,border-color .25s,background .25s}
+      .tl-node:hover{border-color:#d9c078;box-shadow:0 12px 26px rgba(90,70,20,.13)}
+      .tl-node.active{border-color:#b98a1e;border-left:4px solid #e6b93f;background:linear-gradient(180deg,#fffef9,#fdf3d7);box-shadow:0 14px 30px rgba(122,82,0,.16)}
+      .tl-node::before{left:-41px;top:24px;width:17px;height:17px;background:#fff;border:3px solid #b9ac8d;z-index:1}
+      .tl-node:hover::before,.tl-node.active::before{border-color:#7a5200;background:#e6b93f;box-shadow:0 0 0 5px rgba(230,185,63,.25)}
+      .tl-node.end{background:transparent;border:1.5px dashed #cbbd93;box-shadow:none}
+      .tl-node.end::before{border-style:dashed;background:#faf4e7;box-shadow:none}
+      .tl-date{display:inline-block;background:#f7ecd2;border:1px solid #e7d6a8;padding:4px 11px;border-radius:999px;font-size:.74rem}
+      .tl-node.end .tl-date{background:transparent;border-style:dashed}
+      .tl-title{font-size:1.45rem;margin:9px 0 5px}
+      .tl-panel{position:relative;overflow:hidden;border:1px solid #eadfc6;background:radial-gradient(120% 150% at 88% -10%,#fdf3d7 0%,#ffffff 58%);box-shadow:0 16px 36px rgba(90,70,20,.13)}
+      .tl-panel::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#7a5200,#e6b93f,#7a5200)}
+      .tlp-date{display:inline-block;background:#f7ecd2;border:1px solid #e7d6a8;padding:4px 11px;border-radius:999px;font-size:.74rem}
+      .tlp-title{font-size:1.7rem;margin:10px 0 6px}
+      .tlp-btn{transition:all .2s}
+      .tlp-btn:hover:not(:disabled){background:#7a5200;border-color:#7a5200;color:#fff}
+      @media (max-width:560px){.tl{padding-left:38px}.tl::before,.tl::after{left:8px}.tl-node{padding:16px 16px 18px}.tl-node::before{left:-37px}.tlp-title{font-size:1.45rem}}
+      @media (prefers-reduced-motion:no-preference){
+        .tl-node.active::before{animation:tlPulse 2.2s ease-out infinite}
+        @keyframes tlPulse{0%{box-shadow:0 0 0 0 rgba(230,185,63,.45)}70%{box-shadow:0 0 0 11px rgba(230,185,63,0)}100%{box-shadow:0 0 0 0 rgba(230,185,63,0)}}
+      }
+      @supports (animation-timeline: view()){
+        @media (prefers-reduced-motion:no-preference){
+          .tl-node{animation:tlRise linear both;animation-timeline:view();animation-range:entry 5% entry 65%}
+          @keyframes tlRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        }
+      }
+
+      /* ---------- PREVIEW AESTHETIC PASS 2026-11-22 (preview only) ---------- */
+      ::selection{background:#e6b93f;color:#171b26}
+      ::-webkit-scrollbar{width:10px}
+      ::-webkit-scrollbar-track{background:#0a1122}
+      ::-webkit-scrollbar-thumb{background:linear-gradient(#8a6410,#e6b93f);border-radius:6px}
+      :focus-visible{outline:2.5px solid #e6b93f;outline-offset:2px}
+      .paper{background-image:linear-gradient(180deg,rgba(255,255,255,.4),rgba(230,185,63,.05) 55%,rgba(255,255,255,0))}
+      .kicker{display:flex;align-items:center;gap:11px}
+      .kicker::before{content:"";width:28px;height:2.5px;border-radius:2px;background:currentColor;opacity:.85;flex:none}
+      h2.chapter::after{content:"";display:block;width:56px;height:4px;border-radius:2px;margin-top:14px;background:linear-gradient(90deg,var(--acc),rgba(230,185,63,0))}
+      #top{background-image:radial-gradient(60% 42% at 82% 0%,rgba(230,185,63,.17),transparent 62%),radial-gradient(52% 36% at 6% 10%,rgba(230,185,63,.09),transparent 60%)}
+      @supports ((-webkit-background-clip:text) or (background-clip:text)){
+        .name .gold{background:linear-gradient(100deg,#c9a227,#f4d97b 45%,#e6b93f 70%,#a87f14);-webkit-background-clip:text;background-clip:text;color:transparent}
+      }
+      .hero-photo img{box-shadow:0 24px 60px rgba(0,0,0,.45),0 0 0 1px rgba(230,185,63,.35)}
+      .g-card{border:1px solid #eee1c2;transition:transform .25s cubic-bezier(.22,.8,.3,1),box-shadow .25s}
+      .g-card:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(90,70,20,.15)}
+      .work{border:1px solid #e9dcbc;transition:box-shadow .25s,border-color .25s}
+      .work:hover{border-color:#d9c078;box-shadow:0 14px 32px rgba(90,70,20,.12)}
+      .role-chip,.lchip,.art-chip{transition:transform .2s,box-shadow .2s,border-color .2s}
+      .role-chip:hover,.lchip:hover{transform:translateY(-2px);border-color:#b98a1e;box-shadow:0 8px 18px rgba(90,70,20,.12)}
+      .c-med{transition:box-shadow .25s,transform .25s}
+      .c-med:hover{box-shadow:0 10px 24px rgba(122,82,0,.28)}
+      .cta-link,.ext-link{transition:color .2s,text-decoration-color .2s;text-underline-offset:3px}
+      .pv-ribbon{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:999;background:#0a1122;color:#e6b93f;border:1px solid #e6b93f;padding:9px 18px;border-radius:999px;font-weight:700;font-size:.85rem;box-shadow:0 12px 30px rgba(0,0,0,.35);white-space:nowrap}
+</style>
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://saidul-mostafa-chowdhury.vercel.app/" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Saidul Mostafa Chowdhury" />
+<meta property="og:title" content="Saidul Mostafa Chowdhury — One Man, Three Worlds" />
+<meta property="og:description" content="Saidul Mostafa Chowdhury is an Assistant Teacher (English) at Madrasha Khairul Ummah, Chattogram; a B.A. (Hons) in English Language and Literature graduate of Port City International University (PCIU); and the Founder and Captain of The Bachelors FC, Khulshi." />
+<meta property="og:url" content="https://saidul-mostafa-chowdhury.vercel.app/" />
+<meta property="og:image" content="https://gpjkjrvxacgojwmfukdy.supabase.co/storage/v1/object/public/players/player-r9m5suyamvwej3jx.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Saidul Mostafa Chowdhury — One Man, Three Worlds" />
+<meta name="twitter:description" content="Saidul Mostafa Chowdhury is an Assistant Teacher (English) at Madrasha Khairul Ummah, Chattogram; a B.A. (Hons) in English Language and Literature graduate of Port City International University (PCIU); and the Founder and Captain of The Bachelors FC, Khulshi." />
+<meta name="twitter:image" content="https://gpjkjrvxacgojwmfukdy.supabase.co/storage/v1/object/public/players/player-r9m5suyamvwej3jx.jpg" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://saidul-mostafa-chowdhury.vercel.app/#person", "name": "Saidul Mostafa Chowdhury", "url": "https://saidul-mostafa-chowdhury.vercel.app/", "image": "https://gpjkjrvxacgojwmfukdy.supabase.co/storage/v1/object/public/players/player-r9m5suyamvwej3jx.jpg", "description": "Assistant Teacher (English) at Madrasha Khairul Ummah, Chattogram; B.A. (Hons) in English Language and Literature, Port City International University (PCIU); Founder and Captain of The Bachelors FC.", "disambiguatingDescription": "English teacher and football club founder based in Chattogram, Bangladesh, educated at Port City International University.", "jobTitle": "Assistant Teacher (English)", "worksFor": {"@type": "Organization", "name": "Madrasha Khairul Ummah"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Port City International University"}, "address": {"@type": "PostalAddress", "addressLocality": "Chattogram", "addressCountry": "BD"}, "knowsLanguage": ["Bengali", "English", "Hindi", "Arabic"], "founderOf": {"@type": "SportsTeam", "@id": "https://bachelors-fc.vercel.app/#team", "name": "The Bachelors FC", "url": "https://bachelors-fc.vercel.app/"}, "sameAs": ["https://www.linkedin.com/in/saidulmostafachowdhury", "https://orcid.org/0009-0004-2667-2187", "https://www.facebook.com/share/1FN6YmvnhS/", "https://bachelors-fc.vercel.app"]}</script>
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+  <body>
+    <div class="pbar" aria-hidden="true"><div class="pbar-fill" id="pbarFill"></div></div>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav" id="siteNav">
+      <div class="nav-in">
+        <a class="brand" href="#top" aria-label="Saidul Mostafa Chowdhury — back to top">
+          <img class="brand-mark" src="data:image/jpeg;base64,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" alt="" width="36" height="36" />
+          <span class="brand-name" data-i18n="brandName">Saidul Mostafa Chowdhury</span>
+        </a>
+        <nav class="links" aria-label="Sections">
+          <a href="#story" data-i18n="navStory">About</a>
+          <a href="#worlds" data-i18n="navWorlds">Experience</a>
+          <a href="#mind" data-i18n="navMind">Personality</a>
+          <a href="#works" data-i18n="navWorks">Selected Work</a>
+          <a href="#offduty" data-i18n="navOff">Interests</a>
+          <a href="#ask" data-i18n="navAsk">FAQ</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language"><span id="langLabel">বাংলা</span></button>
+          <button class="burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navDrop"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <div class="nav-drop" id="navDrop">
+        <nav class="drop-links" aria-label="Sections">
+          <a href="#story" data-i18n="navStory">About</a>
+          <a href="#worlds" data-i18n="navWorlds">Experience</a>
+          <a href="#mind" data-i18n="navMind">Personality</a>
+          <a href="#works" data-i18n="navWorks">Selected Work</a>
+          <a href="#offduty" data-i18n="navOff">Interests</a>
+          <a href="#ask" data-i18n="navAsk">FAQ</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= OPENING ================= -->
+      <section class="opening" id="top" data-acc="#e6b93f" style="padding-top:56px">
+        <div class="wrap">
+          <h1 class="name disp rv in"><span data-i18n="name1">Saidul Mostafa</span><br /><span class="gold" data-i18n="name2">Chowdhury</span></h1>
+          <p class="essence" id="essenceLine">Assistant Teacher (English) · BA (Hons) in English Language &amp; Literature, Port City International University ’26 · Founder, The Bachelors FC</p>
+          <p class="hero-tag rv in" data-i18n="heroTag">Chattogram, Bangladesh</p>
+          <figure class="hero-photo rv in">
+            <img src="batchmates.jpg" alt="With batchmates from the English 28th batch, Port City International University" fetchpriority="high">
+            <figcaption data-i18n="cCap">With my batchmates — English 28th Batch, Port City International University</figcaption>
+          </figure>
+          <p class="scroll-cue"><span data-i18n="scrollCue">Scroll to explore</span><span class="arr">↓</span></p>
+        </div>
+      </section>
+
+      <!-- ================= THE ESSENCE / STORY ================= -->
+      <section class="paper" id="story" data-acc="#7a5200">
+        <div class="wrap">
+          <div class="narrow" style="margin:0">
+            <p class="kicker rv" data-i18n="storyKicker">Profile</p>
+            <h2 class="chapter disp rv" data-i18n="storyTitle">About Me</h2>
+            <p class="lead rv" data-i18n="storyP1">I serve as an <strong>Assistant Teacher (English)</strong> at <strong>Madrasha Khairul Ummah</strong> in Chattogram, where I have taught students from <strong>Grades 3 to 10</strong> since <strong>April 2026</strong>. I hold a <strong>B.A. (Hons) in English Language and Literature</strong> from <strong>Port City International University</strong> (Class of 2026), and I am the <strong>Founder and Captain</strong> of <strong>The Bachelors FC</strong>. Alongside teaching and football, I remain actively engaged in community and youth work in Chittagong.</p>
+            <p class="lead rv" data-i18n="storyP2">This page presents a concise record of my professional experience, education, skills and community engagements.</p>
+          </div>
+          <div class="glance rv">
+            <div class="g-card">
+              <span class="g-ic" style="background:#14532d"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19a2 2 0 012-2h13"/></svg></span>
+              <div><div class="gk" data-i18n="g1K">By day</div><div class="gv" data-i18n="g1V">The Teacher</div><div class="gs" data-i18n="g1S">Assistant Teacher (English) · Madrasha Khairul Ummah</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#0d1f4b"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 21 7 21 17 12 22 3 17 3 7"/><circle cx="12" cy="12" r="3.4"/></svg></span>
+              <div><div class="gk" data-i18n="g2K">At heart</div><div class="gv" data-i18n="g2V">The Founder</div><div class="gs" data-i18n="g2S">The Bachelors FC · est. 2026, Khulshi</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#166534"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13"/><path d="M3 21h18M12 4v13"/></svg></span>
+              <div><div class="gk" data-i18n="g3K">In goal</div><div class="gv" data-i18n="g3V">The Captain</div><div class="gs" data-i18n="g3S">Goalkeeper · Shirt #99 · Club captain</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#4c1d95"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span>
+              <div><div class="gk" data-i18n="g4K">In mind</div><div class="gv" data-i18n="g4V">INTJ-A</div><div class="gs" data-i18n="g4S">“The Architect” · 16Personalities, Nov 2026</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#365314"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.6-7-11a7 7 0 1114 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+              <div><div class="gk" data-i18n="g5K">Roots</div><div class="gv" data-i18n="g5V">Satkania, Chittagong</div><div class="gs" data-i18n="g5S">Hometown Satkania · I live and work in Chittagong</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#155e75"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>
+              <div><div class="gk" data-i18n="g6K">Languages</div><div class="gv" data-i18n="g6V">Bengali · English · Hindi · Arabic</div><div class="gs" data-i18n="g6S">Bengali — Native · English — Professional working proficiency (Duolingo English Score 129) · Hindi — Working knowledge (listening/speaking) · Arabic — Spoken</div></div>
+            </div>
+            <div class="g-card">
+              <span class="g-ic" style="background:#1e3a5f"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5"/><path d="M22 9v6"/></svg></span>
+              <div><div class="gk" data-i18n="g7K">Education</div><div class="gv" data-i18n="g7V">B.A. English, PCIU</div><div class="gs" data-i18n="g7S">English Language and Literature · Class of 2026</div></div>
+            </div>
+          </div>
+
+          <div class="thesis rv">
+            <div class="thesis-k" data-i18n="thesisK">My undergraduate thesis</div>
+            <p class="thesis-t" data-i18n="thesisT">“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”</p>
+            <p class="thesis-s" data-i18n="thesisS">Supervised by Md. Rashed Khan Milon · B.A. (Hons) English Language and Literature, PCIU</p>
+            <div class="article-panel">
+              <div class="art-k" data-i18n="artK">Journal Article · Manuscript</div>
+              <p class="art-status" data-i18n="artStatus">Developed from my undergraduate thesis, a journal-length version prepared for submission to a peer-reviewed journal.</p>
+              <blockquote class="art-abs" data-i18n="artAbs">“Ethical dilemma is not a secondary theme but the structural principle of Hardy's Tess of the d'Urbervilles. Tess is repeatedly placed in situations in which every available course of action carries loss or compromise, so that moral failure belongs less to her choices than to the unequal order within which she must choose.”</blockquote>
+              <div class="art-chips"><span class="art-chip">Thomas Hardy</span><span class="art-chip">Ethical Dilemma</span><span class="art-chip">Victorian Morality</span><span class="art-chip">Gender</span><span class="art-chip">Determinism</span></div>
+              <div class="art-btns">
+                <a class="ext-link" href="virtue-on-trial-journal-article.pdf" target="_blank" rel="noopener"><span data-i18n="artRead">Read the manuscript (PDF)</span> ↗</a>
+                <a class="art-orcid" href="https://orcid.org/0009-0004-2667-2187" target="_blank" rel="noopener"><span data-i18n="artOrcid">Thesis record on ORCID</span> ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="roles rv">
+            <p class="rk" data-i18n="rolesK">Also on my record</p>
+            <div class="role-chips">
+              <span class="role-chip" data-i18n="r1">Campus Ambassador — Tobacco Free We (তামাকমুক্ত আমরা) · since 2022</span>
+              <span class="role-chip" data-i18n="r2">Distributor &amp; Ambassador — SHOLO, independent youth organisation · since Jul 2026</span>
+              <span class="role-chip" data-i18n="r3">BNCC Cadet, Navy Wing · 2017–2019</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= WORLD 1 — THE TEACHER ================= -->
+      <section class="world w-teacher" id="world-teacher" data-acc="#f0b64a">
+        <span id="worlds" style="position:absolute;top:-70px"></span>
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="tKicker">Experience · Teaching</p>
+          <h2 class="world-word disp rv">The <span class="thin" data-i18n="tWord">Teacher</span></h2>
+          <p class="story rv" style="margin-top:22px" data-i18n="tStory1">Teaching is my profession: the first of my worlds, and the one around which the others are built. Since <strong>April 2026</strong>, I have served as <strong>Assistant Teacher (English)</strong> at <strong>Madrasha Khairul Ummah</strong> in Chittagong, teaching English to students from <strong>Grades 3 to 10</strong>. It is patient, daily work: helping students find their words, and then the confidence to stand behind them.</p>
+          <p class="story rv" data-i18n="tStory2">My standards originate in the classroom. I prepare thoroughly, I state only what I mean, and I do not waste the time of others. The same hand is visible later, in the club I founded.</p>
+          <p class="story rv" data-i18n="tStory3">My responsibilities, as recorded in my professional profile, are to design lesson plans aligned with curriculum standards, to monitor student progress and provide constructive feedback, and to support classroom management and student engagement.</p>
+          <div class="tiles rv">
+            <div class="tile"><div class="tk" data-i18n="t1K">Profession</div><div class="tv" data-i18n="t1V">Assistant Teacher (English)</div></div>
+            <div class="tile"><div class="tk" data-i18n="t2K">Workplace</div><div class="tv" data-i18n="t2V">Madrasha Khairul Ummah, Chittagong</div></div>
+            <div class="tile"><div class="tk" data-i18n="t3K">The craft</div><div class="tv" data-i18n="t3V">Language, patience, standards</div></div>
+            <div class="tile"><div class="tk" data-i18n="t4K">In post since</div><div class="tv" data-i18n="t4V">April 2026 · Grades 3–10</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORLD 2 — THE FOUNDER ================= -->
+      <section class="world w-founder" id="world-founder" data-acc="#e6b93f">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="fKicker">Experience · Leadership &amp; Community</p>
+          <h2 class="world-word disp rv">The <span class="thin" data-i18n="fWord">Founder</span></h2>
+          <p class="story rv" style="margin-top:22px" data-i18n="fStory1">In 2026, in Khulshi, I founded <strong>The Bachelors FC</strong>: an apolitical, non-profit football club for bachelor youth in need of a place to belong. The club has no sponsors and no stadium; it has a growing brotherhood, a motto, and a standard — <strong>character above trophies</strong>.</p>
+          <p class="story rv" data-i18n="fStory2">I lead the club as its <strong>Founder and Captain</strong>, with responsibility for its standards, its programme and its people, both on and off the pitch.</p>
+          <p class="story rv"><span data-i18n="fQuote">A club isn't measured by the trophies it wins — but by the men it saves from themselves.</span></p>
+          <div class="tiles rv">
+            <div class="tile"><div class="tk" data-i18n="f1K">Founded</div><div class="tv" data-i18n="f1V">2026 · Khulshi, Chittagong</div></div>
+            <div class="tile"><div class="tk" data-i18n="f2K">Motto</div><div class="tv" data-i18n="f2V">“Forged in Brotherhood, Driven by Purpose”</div></div>
+            <div class="tile"><div class="tk" data-i18n="f3K">Also known as</div><div class="tv" data-i18n="f3V">“United, Not Alone” · 16 members</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORLD 3 — THE CAPTAIN ================= -->
+      <section class="world w-captain" id="world-captain" data-acc="#7ed492">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="cKicker">Experience · Sport &amp; Leadership</p>
+          <h2 class="world-word disp rv">The <span class="thin" data-i18n="cWord">Captain</span></h2>
+          <p class="story rv" style="margin-top:22px" data-i18n="cStory1">On <strong>29 October 2026</strong>, I assumed the captaincy of the club, taking the armband and the goalkeeper's position in the <strong>#99</strong> shirt. I guard the goal as I guard the club itself: in an organised manner, calmly under pressure, as the final line upon which every other player may rely.</p>
+          <p class="story rv" data-i18n="cStory2">The club's first football match, played on <strong>6 November 2026</strong> at Diesel Colony Play Ground, was against <strong>Madrasha Khairul Ummah FC</strong>, the team of the school at which I teach. Colleagues and students in the classroom by day; opponents on matchday. Both teams performed well, the occasion was enjoyed by all, and the brotherhood between the two sides grew stronger.</p>
+          <div class="tiles rv">
+            <div class="tile"><div class="tk" data-i18n="c1K">Captain since</div><div class="tv" data-i18n="c1V">29 October 2026</div></div>
+            <div class="tile"><div class="tk" data-i18n="c2K">Position</div><div class="tv" data-i18n="c2V">Goalkeeper · Shirt #99</div></div>
+            <div class="tile"><div class="tk" data-i18n="c3K">First match</div><div class="tv" data-i18n="c3V">6 Nov 2026 · vs Madrasha Khairul Ummah FC</div></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ================= PERSONALITY ================= -->
+      <section class="mind" id="mind" data-acc="#c4a6f7">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="mKicker">Personality</p>
+          <h2 class="chapter disp rv" data-i18n="mTitle">Personality</h2>
+          <p class="lead rv" style="color:#ddd3f2;max-width:44em" data-i18n="mIntro">My personality type, as assessed by 16Personalities, is INTJ-A — “The Architect”.</p>
+          <h3 class="disp rv" style="font-size:clamp(1.7rem,4.5vw,2.4rem);margin:30px 0 0;color:#fff">INTJ-A — <span style="color:#c4a6f7">“The Architect”</span></h3>
+
+          <div class="letter-row rv" role="tablist" aria-label="INTJ-A letters">
+            <button class="lchip active" type="button" data-letter="I" role="tab" aria-controls="letterPanel" aria-selected="true"><span class="L">I</span><span class="P">78%</span></button>
+            <button class="lchip" type="button" data-letter="N" role="tab" aria-controls="letterPanel" aria-selected="false"><span class="L">N</span><span class="P">56%</span></button>
+            <button class="lchip" type="button" data-letter="T" role="tab" aria-controls="letterPanel" aria-selected="false"><span class="L">T</span><span class="P">63%</span></button>
+            <button class="lchip" type="button" data-letter="J" role="tab" aria-controls="letterPanel" aria-selected="false"><span class="L">J</span><span class="P">56%</span></button>
+            <button class="lchip" type="button" data-letter="A" role="tab" aria-controls="letterPanel" aria-selected="false"><span class="L">-A</span><span class="P">53%</span></button>
+          </div>
+
+          <div class="letter-panel rv" id="letterPanel" role="tabpanel">
+            <h3 id="letterTitle">I — Introverted <span class="pct">· 78%</span></h3>
+            <p id="letterBody">My most pronounced trait. I restore my energy in solitude, prefer small circles to crowds, and value depth over small talk. It is for this reason that my work is accomplished quietly, and that a classroom and a club each receive my complete attention, one at a time.</p>
+          </div>
+
+          <div class="mind-grid">
+            <div class="rv">
+              <p class="mbar-hint" data-i18n="mBarHint">Select a bar, or a letter above, to view its interpretation in plain terms.</p>
+              <div class="tbar sel">
+                <div class="t-head"><span class="t-name"><span data-i18n="tr1K">Energy</span> · <b data-i18n="tr1V">Introverted</b></span><span class="t-pct">78%</span></div>
+                <div class="track"><div class="fill" style="--w:78%"></div></div>
+                <div class="t-ends"><span data-i18n="tr1L">Extraverted</span><span class="win" data-i18n="tr1R">Introverted</span></div>
+              </div>
+              <div class="tbar">
+                <div class="t-head"><span class="t-name"><span data-i18n="tr2K">Mind</span> · <b data-i18n="tr2V">Intuitive</b></span><span class="t-pct">56%</span></div>
+                <div class="track"><div class="fill" style="--w:56%"></div></div>
+                <div class="t-ends"><span class="win" data-i18n="tr2L">Intuitive</span><span data-i18n="tr2R">Observant</span></div>
+              </div>
+              <div class="tbar">
+                <div class="t-head"><span class="t-name"><span data-i18n="tr3K">Nature</span> · <b data-i18n="tr3V">Thinking</b></span><span class="t-pct">63%</span></div>
+                <div class="track"><div class="fill" style="--w:63%"></div></div>
+                <div class="t-ends"><span class="win" data-i18n="tr3L">Thinking</span><span data-i18n="tr3R">Feeling</span></div>
+              </div>
+              <div class="tbar">
+                <div class="t-head"><span class="t-name"><span data-i18n="tr4K">Tactics</span> · <b data-i18n="tr4V">Judging</b></span><span class="t-pct">56%</span></div>
+                <div class="track"><div class="fill" style="--w:56%"></div></div>
+                <div class="t-ends"><span class="win" data-i18n="tr4L">Judging</span><span data-i18n="tr4R">Prospecting</span></div>
+              </div>
+              <div class="tbar">
+                <div class="t-head"><span class="t-name"><span data-i18n="tr5K">Identity</span> · <b data-i18n="tr5V">Assertive</b></span><span class="t-pct">53%</span></div>
+                <div class="track"><div class="fill" style="--w:53%"></div></div>
+                <div class="t-ends"><span class="win" data-i18n="tr5L">Assertive</span><span data-i18n="tr5R">Turbulent</span></div>
+              </div>
+            </div>
+            <div class="rv">
+              <div class="list-box good">
+                <h4 data-i18n="driveT">What drives me</h4>
+                <ul>
+                  <li data-i18n="d1">Vision, held together with pragmatism</li>
+                  <li data-i18n="d2">Strategic, long-range thinking</li>
+                  <li data-i18n="d3">Improving systems — I spot what is inefficient</li>
+                  <li data-i18n="d4">Independence — I work best without supervision</li>
+                  <li data-i18n="d5">Objective judgment — facts over favouritism</li>
+                </ul>
+              </div>
+              <div class="list-box warn">
+                <h4 data-i18n="watchT">What I watch in myself</h4>
+                <ul>
+                  <li data-i18n="w1">Blunt feedback — truth first, tact second</li>
+                  <li data-i18n="w2">Impatience with routine and red tape</li>
+                  <li data-i18n="w3">Doing everything myself instead of delegating</li>
+                  <li data-i18n="w4">Perfectionism that can run into burnout</li>
+                </ul>
+              </div>
+              <div class="pascal"><span class="pq" data-i18n="pascalQ">Man is a thinking reed.</span><span data-i18n="pascalA">— Blaise Pascal, from my personality result</span></div>
+            </div>
+          </div>
+          <p class="mind-note rv" data-i18n="mindNote">A comprehensive INTJ-A report on my personality is available in both English and Bangla, and may be requested at any time. One qualification should accompany it: 16Personalities is an instrument of self-reflection, not a scientific diagnosis. Its percentages are best read as an indication of direction, not of destiny.</p>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="world w-teacher skills-sec" id="skills" data-acc="#f0b64a">
+        <div class="wrap">
+          <div class="skills-block rv">
+            <p class="skills-k" data-i18n="skillsK">From my LinkedIn profile</p>
+            <h3 class="skills-h" data-i18n="skillsH">What I'm good at</h3>
+            <p class="skills-note" data-i18n="skillsNote">My principal professional skills, as recorded on my LinkedIn profile. The three skills marked ★ are my foremost.</p>
+            <div class="skill-chips">
+              <button class="skill-chip top" type="button" aria-pressed="false"><span class="star" aria-hidden="true">★</span><span data-i18n="sk1">English Teaching</span></button>
+              <button class="skill-chip top" type="button" aria-pressed="false"><span class="star" aria-hidden="true">★</span><span data-i18n="sk2">Lesson Planning</span></button>
+              <button class="skill-chip top" type="button" aria-pressed="false"><span class="star" aria-hidden="true">★</span><span data-i18n="sk3">Community Leadership</span></button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk4">Pedagogy</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk5">Student Mentoring</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk6">Public Communication</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk7">Event Coordination</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk8">Team Collaboration</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk9">Decision-making</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk10">Time Management</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk11">Social Media Management</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk12">Academic Writing</button>
+              <button class="skill-chip" type="button" aria-pressed="false" data-i18n="sk13">Microsoft &amp; Google Workspace</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OFF DUTY ================= -->
+      <section class="paper" id="offduty" data-acc="#7a5200" style="background:#efe6cf">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="odKicker">Personal</p>
+          <h2 class="chapter disp rv" data-i18n="odTitle">Interests</h2>
+          <p class="lead rv" style="max-width:44em" data-i18n="odIntro">A brief list of my hobbies and personal interests.</p>
+          <h3 class="od-sub rv" data-i18n="odHobT">Hobbies</h3>
+          <div class="od-chips rv">
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb1">Reading</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb2">Traveling</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb3">Fishing</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb4">Cooking</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb5">Horseback Riding</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb6">Archery</button>
+            <button class="od-chip" type="button" aria-pressed="false" data-i18n="hb7">Solitude-loving</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= THE JOURNEY ================= -->
+      <section class="paper" id="journey" data-acc="#7a5200">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="jKicker">Career &amp; Community</p>
+          <h2 class="chapter disp rv" data-i18n="jTitle">Timeline</h2>
+          <p class="lead rv" style="max-width:44em" data-i18n="jIntro">A chronological summary of my education, career and community roles.</p>
+          <div class="tl-panel rv" id="tlPanel" aria-live="polite">
+            <div class="tlp-date" id="tlpDate"></div>
+            <div class="tlp-title" id="tlpTitle"></div>
+            <p class="tlp-desc" id="tlpDesc"></p>
+            <div class="tlp-nav">
+              <button class="tlp-btn" id="tlPrev" type="button" data-i18n="tlPrev">← Previous</button>
+              <span class="tlp-count" id="tlpCount"></span>
+              <button class="tlp-btn" id="tlNext" type="button" data-i18n="tlNext">Next →</button>
+            </div>
+          </div>
+          <div class="tl rv" id="timeline">
+            <button class="tl-node active" type="button">
+              <span class="tl-date" data-i18n="tl0D">Jul 2017 – May 2019</span>
+              <div class="tl-title" data-i18n="tl0T">BNCC Cadet</div>
+              <p class="tl-desc" data-i18n="tl0S">Bangladesh National Cadet Corps, Navy Wing — Hazera-Taju Degree College Platoon, Chandgaon, Chittagong. It was here that my discipline was first instilled.</p>
+            </button>
+            <button class="tl-node" type="button">
+              <span class="tl-date" data-i18n="tl1D">May 2022 – present</span>
+              <div class="tl-title" data-i18n="tl1T">Campus Ambassador — Tobacco Free We</div>
+              <p class="tl-desc" data-i18n="tl1S">I promote tobacco-free awareness on campus and organise campaigns and events to engage students. I continue to serve in this role.</p>
+            </button>
+            <button class="tl-node" type="button">
+              <span class="tl-date" data-i18n="tlPD">Aug 2025 – May 2026</span>
+              <div class="tl-title" data-i18n="tlPT">Member — PCIU English Club (PCEC)</div>
+              <p class="tl-desc" data-i18n="tlPS">As a member of the PCIU English Club (PCEC), I assisted in the organisation of club events and English workshops.</p>
+            </button>
+            <button class="tl-node" type="button">
+              <span class="tl-date" data-i18n="tl2D">2026</span>
+              <div class="tl-title" data-i18n="tl2T">I graduate from PCIU</div>
+              <p class="tl-desc" data-i18n="tl2S">B.A. in English Language and Literature, Port City International University — Class of 2026. My undergraduate thesis, “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”, was supervised by Md. Rashed Khan Milon.</p>
+            </button>
+            <button class="tl-node" type="button">
+              <span class="tl-date" data-i18n="tl3D">April 2026</span>
+              <div class="tl-title" data-i18n="tl3T">Assistant Teacher (English)</div>
+              <p class="tl-desc" data-i18n="tl3S">I joined Madrasha Khairul Ummah, Chittagong, as Assistant Teacher (English), teaching students from Grades 3 to 10.</p>
+            </button>
+            <button class="tl-node" type="button">
+              <span class="tl-date" data-i18n="tl4D">July 2026</span>
+              <div class="tl-title" data-i18n="tl4T">I found The Bachelors FC</div>
+              <p class="tl-desc" data-i18n="tl4S">Founder &amp; Captain of the club, founded in Khulshi — and the same month, I become Distributor &amp; Ambassador for SHOLO, an independent youth organisation (sholo.org): I distribute its publications and represent it at PCIU and in my Khulshi area.</p>
+            </button>
+            <div class="tl-node end">
+              <span class="tl-date" data-i18n="tl9D">To come</span>
+              <div class="tl-title" data-i18n="tl9T">The next chapter is being written</div>
+              <p class="tl-desc" data-i18n="tl9S">This record remains in progress; further chapters will follow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORKS ================= -->
+      <section class="paper" id="works" data-acc="#7a5200" style="background:#f3ecdb">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="wkKicker">Portfolio</p>
+          <h2 class="chapter disp rv" data-i18n="wkTitle">Selected Works</h2>
+          <div class="works-list">
+            <article class="work rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="wkArtK">Research · Writing</span><span class="plus">+</span></span>
+                <h3 data-i18n="wkArtT">Virtue on Trial — the Journal Article</h3>
+                <p class="wsub" data-i18n="wkArtS">My thesis, reworked as a journal article on ethics, gender and judgement in Hardy's Tess.</p>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <ul>
+                  <li data-i18n="wkArtL1"><b>Developed from</b> my B.A. (Hons) thesis at PCIU, supervised by Md. Rashed Khan Milon</li>
+                  <li data-i18n="wkArtL2"><b>Argument</b>: ethical dilemma is the novel's structural principle, not a side theme</li>
+                  <li data-i18n="wkArtL3"><b>Status</b>: manuscript prepared for submission to a peer-reviewed journal; recorded on ORCID</li>
+                </ul>
+                <a class="ext-link" href="virtue-on-trial-journal-article.pdf" target="_blank" rel="noopener"><span data-i18n="wkArtLink">Read the manuscript (PDF)</span> ↗</a>
+              </div></div>
+            </article>
+            <article class="work rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="wk2K">Design · Identity</span><span class="plus">+</span></span>
+                <h3 data-i18n="wk2T">Kit · Logo · Covers</h3>
+                <p class="wsub" data-i18n="wk2S">The visual identity of the club, designed by its founder.</p>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <img class="work-img" src="https://bachelors-fc.vercel.app/assets/jersey.jpg" alt="The Bachelors FC home kit" loading="lazy">
+                <ul>
+                  <li data-i18n="wk2L1"><b>Home kit</b> — white with navy pinstripes, navy sleeves and collar, gold-and-black hexagonal lion crest</li>
+                  <li data-i18n="wk2L2"><b>Negative-space wordmark</b> — BACHELORS, with the O drawn as a football</li>
+                  <li data-i18n="wk2L3"><b>Facebook covers</b> in navy, white and black</li>
+                </ul>
+              </div></div>
+            </article>
+            <article class="work rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="wk3K">The club itself</span><span class="plus">+</span></span>
+                <h3 data-i18n="wk3T">The Bachelors FC</h3>
+                <p class="wsub" data-i18n="wk3S">The most substantial of my works: an institution, not merely a team.</p>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <img class="work-img" src="https://bachelors-fc.vercel.app/assets/team-photo-band.jpg" alt="The Bachelors FC squad" loading="lazy">
+                <ul>
+                  <li data-i18n="wk3L1">Founded <b>2026</b> in Khulshi, Chittagong — apolitical and non-profit</li>
+                  <li data-i18n="wk3L2">Built for <b>bachelor youth</b>: brotherhood, discipline, leadership, purpose</li>
+                  <li data-i18n="wk3L3">Motto: <b>“Forged in Brotherhood, Driven by Purpose”</b> — United, Not Alone</li>
+                  <li data-i18n="wk3L4"><b>No sponsors. No stadium.</b> Sixteen members and counting</li>
+                </ul>
+                <a class="ext-link" href="https://bachelors-fc.vercel.app" target="_blank" rel="noopener"><span data-i18n="wkLink2">Enter the club site</span> ↗</a>
+              </div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ASK CHOWDHURY ================= -->
+      <section class="paper" id="ask" data-acc="#7a5200" style="background:#efe6cf">
+        <div class="wrap">
+          <p class="kicker rv" data-i18n="askKicker">Frequently Asked Questions</p>
+          <h2 class="chapter disp rv" data-i18n="askTitle">Questions and Answers</h2>
+          <p class="lead rv" style="max-width:44em" data-i18n="askIntro">Responses to the questions most frequently addressed to me.</p>
+          <div class="works-list">
+            <article class="work ask rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="qa1K">The club</span><span class="plus">+</span></span>
+                <h3 data-i18n="qa1Q">Why did you start The Bachelors FC?</h3>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <p class="qa-a" data-i18n="qa1A">For the bachelor youth of Khulshi, who needed a place to belong. I founded the club in 2026 as an apolitical, non-profit home for them — without sponsors and without a stadium — founded upon brotherhood, discipline and purpose, with character valued above trophies.</p>
+              </div></div>
+            </article>
+            <article class="work ask rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="qa2K">The classroom</span><span class="plus">+</span></span>
+                <h3 data-i18n="qa2Q">What do you do as a teacher?</h3>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <p class="qa-a" data-i18n="qa2A">I am an Assistant Teacher (English) at Madrasha Khairul Ummah in Chittagong, a post I have held since April 2026, teaching English to students from Grades 3 to 10. My responsibilities comprise designing lesson plans aligned with curriculum standards, monitoring student progress and providing feedback, and supporting classroom management and student engagement.</p>
+              </div></div>
+            </article>
+            <article class="work ask rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="qa3K">On the pitch</span><span class="plus">+</span></span>
+                <h3 data-i18n="qa3Q">What position do you play?</h3>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <p class="qa-a" data-i18n="qa3A">Goalkeeper, in the #99 shirt. On 29 October 2026, I additionally assumed the captain's armband: one captain, one armband, and the final line upon which the team relies.</p>
+              </div></div>
+            </article>
+            <article class="work ask rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="qa5K">The mind</span><span class="plus">+</span></span>
+                <h3 data-i18n="qa5Q">What is your personality type?</h3>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <p class="qa-a" data-i18n="qa5A">My personality type, as assessed by 16Personalities, is INTJ-A — “The Architect”.</p>
+              </div></div>
+            </article>
+            <article class="work ask rv">
+              <button class="work-head" type="button" aria-expanded="false">
+                <span class="wk"><span data-i18n="qa6K">The student years</span><span class="plus">+</span></span>
+                <h3 data-i18n="qa6Q">Where did you study?</h3>
+              </button>
+              <div class="work-body"><div class="work-body-in">
+                <p class="qa-a" data-i18n="qa6A">Port City International University (PCIU), Chittagong, where I completed a B.A. in English Language and Literature (Class of 2026). My undergraduate thesis, “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”, was supervised by Md. Rashed Khan Milon. I originate from Satkania and am based in Chittagong. My languages are Bengali (native), English (professional working proficiency; Duolingo English Score 129), Hindi (working knowledge) and Arabic (spoken).</p>
+              </div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ================= CONTACT / CLOSING ================= -->
+      <section class="closing" id="contact" data-acc="#e6b93f">
+        <div class="wrap">
+          <p class="reach rv" data-i18n="reach" style="margin-top:0">For professional enquiries — teaching, community work or football — please contact me through any of the channels below.</p>
+          <div class="c-rule rv" aria-hidden="true"></div>
+          <div class="c-strip rv">
+            <a class="c-med" href="mailto:saidulmostafachy@gmail.com" aria-label="Email — saidulmostafachy@gmail.com">
+              <span class="ring"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span class="cl">Email</span>
+            </a>
+            <a class="c-med" href="https://www.linkedin.com/in/saidulmostafachowdhury" target="_blank" rel="noopener" aria-label="LinkedIn — Saidul Mostafa Chowdhury">
+              <span class="ring"><svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14H.2zM8.2 8h4.4v1.9h.06c.61-1.16 2.1-2.38 4.34-2.38 4.64 0 5.5 3.05 5.5 7.02V22h-4.6v-6.6c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.5V22H8.2z" transform="translate(1.2 1) scale(.92)"/></svg></span>
+              <span class="cl">LinkedIn</span>
+            </a>
+            <a class="c-med" href="https://orcid.org/0009-0004-2667-2187" target="_blank" rel="noopener" aria-label="ORCID — Saidul Mostafa Chowdhury">
+              <span class="ring"><svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg></span>
+              <span class="cl">ORCID</span>
+            </a>
+            <a class="c-med" href="https://www.facebook.com/share/1FN6YmvnhS/" target="_blank" rel="noopener" aria-label="Facebook — Saidul Mostafa Chowdhury">
+              <span class="ring"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M13.6 21.9v-7.4h2.5l.4-2.9h-2.9V9.7c0-.84.23-1.41 1.44-1.41h1.54V5.7c-.27-.04-1.18-.11-2.24-.11-2.22 0-3.74 1.35-3.74 3.84v2.17H8.1v2.9h2.5v7.4a10 10 0 002.99 0z"/></svg></span>
+              <span class="cl">Facebook</span>
+            </a>
+            <a class="c-med" href="https://tuition-finder.com/tutor-details/26061063" target="_blank" rel="noopener" aria-label="Tuition Finder — Tutor profile of Saidul Mostafa Chowdhury">
+              <span class="ring"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5"/><path d="M22 9v6"/></svg></span>
+              <span class="cl" style="white-space:normal;line-height:1.25">Tuition<br />Finder</span>
+            </a>
+            <a class="c-med" href="https://bachelors-fc.vercel.app" target="_blank" rel="noopener" aria-label="The Bachelors FC — club website">
+              <span class="ring"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2.5 20.5 7.2 20.5 16.8 12 21.5 3.5 16.8 3.5 7.2"/><path d="M12 7.2l3.1 2.2-1.2 3.7h-3.8L8.9 9.4z"/><path d="M12 3v4.2M20 7.4l-4.9 2M20.2 16.5l-6.3-3.4M12 21.2v-8.1M3.8 16.5l6.3-3.4M4 7.4l4.9 2"/></svg></span>
+              <span class="cl">BFC Club</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot-in" style="justify-content:center;text-align:center">
+        <span>Copyright © 2026. All Rights Reserved by Saidul Mostafa Chowdhury.</span>
+      </div>
+    </footer>
+
+    <script>
+      (function(){
+        "use strict";
+
+        var ESSENCE = {
+          en: "Assistant Teacher (English) · BA (Hons) in English Language & Literature, Port City International University ’26 · Founder, The Bachelors FC",
+          bn: "সহকারী শিক্ষক (ইংরেজি) · বি.এ. (সম্মান) ইংরেজি ভাষা ও সাহিত্য, পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি ’২৬ · প্রতিষ্ঠাতা, The Bachelors FC"
+        };
+        var I18N = {
+          en: {
+            navStory:"About", navWorlds:"Experience", navMind:"Personality", navOff:"Interests", navWorks:"Selected Work", navContact:"Contact",
+            heroTag:"Chattogram, Bangladesh",
+            name1:"Saidul Mostafa", name2:"Chowdhury",
+            scrollCue:"Scroll to explore",
+            storyKicker:"Profile", storyTitle:"About Me",
+            storyP1:"I serve as an Assistant Teacher (English) at Madrasha Khairul Ummah in Chattogram, where I have taught students from Grades 3 to 10 since April 2026. I hold a B.A. (Hons) in English Language and Literature from Port City International University (Class of 2026), and I am the Founder and Captain of The Bachelors FC. Alongside teaching and football, I remain actively engaged in community and youth work in Chittagong.",
+            storyP2:"This page presents a concise record of my professional experience, education, skills and community engagements.",
+            g1K:"By day", g1V:"The Teacher", g1S:"Assistant Teacher (English) · Madrasha Khairul Ummah",
+            g2K:"At heart", g2V:"The Founder", g2S:"The Bachelors FC · est. 2026, Khulshi",
+            g3K:"In goal", g3V:"The Captain", g3S:"Goalkeeper · Shirt #99 · Club captain",
+            g4K:"In mind", g4V:"INTJ-A", g4S:"“The Architect” · 16Personalities, Nov 2026",
+            g5K:"Roots", g5V:"Satkania, Chittagong", g5S:"Hometown Satkania · I live and work in Chittagong",
+            g6K:"Languages", g6V:"Bengali · English · Hindi · Arabic", g6S:"Bengali — Native · English — Professional working proficiency (Duolingo English Score 129) · Hindi — Working knowledge (listening/speaking) · Arabic — Spoken",
+            g7K:"Education", g7V:"B.A. English, PCIU", g7S:"English Language and Literature · Class of 2026",
+            thesisK:"My undergraduate thesis", thesisT:"“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”", thesisS:"Supervised by Md. Rashed Khan Milon · B.A. (Hons) English Language and Literature, PCIU",
+            artK:"Journal Article · Manuscript", artStatus:"Developed from my undergraduate thesis, a journal-length version prepared for submission to a peer-reviewed journal.", artAbs:"“Ethical dilemma is not a secondary theme but the structural principle of Hardy's Tess of the d'Urbervilles. Tess is repeatedly placed in situations in which every available course of action carries loss or compromise, so that moral failure belongs less to her choices than to the unequal order within which she must choose.”", artRead:"Read the manuscript (PDF)", artOrcid:"Thesis record on ORCID",
+            wkArtK:"Research · Writing", wkArtT:"Virtue on Trial — the Journal Article", wkArtS:"My thesis, reworked as a journal article on ethics, gender and judgement in Hardy's Tess.", wkArtL1:"Developed from my B.A. (Hons) thesis at PCIU, supervised by Md. Rashed Khan Milon", wkArtL2:"Argument: ethical dilemma is the novel's structural principle, not a side theme", wkArtL3:"Status: manuscript prepared for submission to a peer-reviewed journal; recorded on ORCID", wkArtLink:"Read the manuscript (PDF)",
+            rolesK:"Also on my record",
+            r1:"Campus Ambassador — Tobacco Free We (তামাকমুক্ত আমরা) · since 2022",
+            r2:"Distributor & Ambassador — SHOLO, independent youth organisation · since Jul 2026",
+            r3:"BNCC Cadet, Navy Wing · 2017–2019",
+            brandName:"Saidul Mostafa Chowdhury",
+            tKicker:"Experience · Teaching", tWord:"Teacher",
+            tStory1:"Teaching is my profession: the first of my worlds, and the one around which the others are built. Since April 2026, I have served as Assistant Teacher (English) at Madrasha Khairul Ummah in Chittagong, teaching English to students from Grades 3 to 10. It is patient, daily work: helping students find their words, and then the confidence to stand behind them.",
+            tStory2:"My standards originate in the classroom. I prepare thoroughly, I state only what I mean, and I do not waste the time of others. The same hand is visible later, in the club I founded.",
+            tStory3:"My responsibilities, as recorded in my professional profile, are to design lesson plans aligned with curriculum standards, to monitor student progress and provide constructive feedback, and to support classroom management and student engagement.",
+            t1K:"Profession", t1V:"Assistant Teacher (English)",
+            t4K:"In post since", t4V:"April 2026 · Grades 3–10",
+            t2K:"Workplace", t2V:"Madrasha Khairul Ummah, Chittagong",
+            t3K:"The craft", t3V:"Language, patience, standards",
+            skillsK:"From my LinkedIn profile", skillsH:"What I'm good at", skillsNote:"My principal professional skills, as recorded on my LinkedIn profile. The three skills marked ★ are my foremost.",
+            sk1:"English Teaching", sk2:"Lesson Planning", sk3:"Community Leadership", sk4:"Pedagogy", sk5:"Student Mentoring", sk6:"Public Communication", sk7:"Event Coordination", sk8:"Team Collaboration", sk9:"Decision-making", sk10:"Time Management", sk11:"Social Media Management", sk12:"Academic Writing", sk13:"Microsoft & Google Workspace",
+            fKicker:"Experience · Leadership & Community", fWord:"Founder",
+            fStory1:"In 2026, in Khulshi, I founded The Bachelors FC: an apolitical, non-profit football club for bachelor youth in need of a place to belong. The club has no sponsors and no stadium; it has a growing brotherhood, a motto, and a standard — character above trophies.",
+            fStory2:"I lead the club as its Founder and Captain, with responsibility for its standards, its programme and its people, both on and off the pitch.",
+            fQuote:"A club isn't measured by the trophies it wins — but by the men it saves from themselves.",
+            f1K:"Founded", f1V:"2026 · Khulshi, Chittagong",
+            f2K:"Motto", f2V:"“Forged in Brotherhood, Driven by Purpose”",
+            f3K:"Also known as", f3V:"“United, Not Alone” · 16 members",
+            cKicker:"Experience · Sport & Leadership", cWord:"Captain",
+            cStory1:"On 29 October 2026, I assumed the captaincy of the club, taking the armband and the goalkeeper's position in the #99 shirt. I guard the goal as I guard the club itself: in an organised manner, calmly under pressure, as the final line upon which every other player may rely.",
+            cStory2:"The club's first football match, played on 6 November 2026 at Diesel Colony Play Ground, was against Madrasha Khairul Ummah FC, the team of the school at which I teach. Colleagues and students in the classroom by day; opponents on matchday. Both teams performed well, the occasion was enjoyed by all, and the brotherhood between the two sides grew stronger.",
+            cs1K:"Matches in goal", cs2K:"Saves", cs3K:"Passion — my own rating",
+            c1K:"Captain since", c1V:"29 October 2026",
+            c2K:"Position", c2V:"Goalkeeper · Shirt #99",
+            c3K:"First match", c3V:"6 Nov 2026 · vs Madrasha Khairul Ummah FC", cCap:"With my batchmates — English 28th Batch, Port City International University",
+            mKicker:"Personality", mTitle:"Personality",
+            mIntro:"My personality type, as assessed by 16Personalities, is INTJ-A — “The Architect”.",
+            tr1K:"Energy", tr1V:"Introverted", tr1L:"Extraverted", tr1R:"Introverted",
+            tr2K:"Mind", tr2V:"Intuitive", tr2L:"Intuitive", tr2R:"Observant",
+            tr3K:"Nature", tr3V:"Thinking", tr3L:"Thinking", tr3R:"Feeling",
+            tr4K:"Tactics", tr4V:"Judging", tr4L:"Judging", tr4R:"Prospecting",
+            tr5K:"Identity", tr5V:"Assertive", tr5L:"Assertive", tr5R:"Turbulent",
+            driveT:"What drives me",
+            d1:"Vision, held together with pragmatism", d2:"Strategic, long-range thinking",
+            d3:"Improving systems — I spot what is inefficient", d4:"Independence — I work best without supervision",
+            d5:"Objective judgment — facts over favouritism",
+            watchT:"What I watch in myself",
+            w1:"Blunt feedback — truth first, tact second", w2:"Impatience with routine and red tape",
+            w3:"Doing everything myself instead of delegating", w4:"Perfectionism that can run into burnout",
+            pascalQ:"Man is a thinking reed.", pascalA:"— Blaise Pascal, from my personality result",
+            mindNote:"A comprehensive INTJ-A report on my personality is available in both English and Bangla, and may be requested at any time. One qualification should accompany it: 16Personalities is an instrument of self-reflection, not a scientific diagnosis. Its percentages are best read as an indication of direction, not of destiny.",
+            jKicker:"Career & Community", jTitle:"Timeline",
+            jIntro:"A chronological summary of my education, career and community roles.",
+            tl0D:"Jul 2017 – May 2019", tl0T:"BNCC Cadet", tl0S:"Bangladesh National Cadet Corps, Navy Wing — Hazera-Taju Degree College Platoon, Chandgaon, Chittagong. It was here that my discipline was first instilled.",
+            tl1D:"May 2022 – present", tl1T:"Campus Ambassador — Tobacco Free We", tl1S:"I promote tobacco-free awareness on campus and organise campaigns and events to engage students. I continue to serve in this role.",
+            tlPD:"Aug 2025 – May 2026", tlPT:"Member — PCIU English Club (PCEC)", tlPS:"As a member of the PCIU English Club (PCEC), I assisted in the organisation of club events and English workshops.",
+            tl2D:"2026", tl2T:"I graduate from PCIU", tl2S:"B.A. in English Language and Literature, Port City International University — Class of 2026. My undergraduate thesis, “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”, was supervised by Md. Rashed Khan Milon.",
+            tl3D:"April 2026", tl3T:"Assistant Teacher (English)", tl3S:"I joined Madrasha Khairul Ummah, Chittagong, as Assistant Teacher (English), teaching students from Grades 3 to 10.",
+            tl4D:"July 2026", tl4T:"I found The Bachelors FC", tl4S:"Founder and Captain of the club, founded in Khulshi. In the same month, I became a Distributor and Ambassador for SHOLO, an independent youth organisation (sholo.org), distributing its publications and representing it at PCIU and in my Khulshi area.",
+            tl6D:"29 October 2026", tl6T:"I am named club captain", tl6S:"I assumed the armband and the #99 shirt, in goal: one captain, one armband.",
+            tl7D:"6 November 2026", tl7T:"The club's first football match", tl7S:"At Diesel Colony Play Ground, against Madrasha Khairul Ummah FC, the team of my own school. Both sides performed well, and the brotherhood grew stronger.",
+            tl9D:"To come", tl9T:"The next chapter is being written", tl9S:"This record remains in progress; further chapters will follow.",
+            wkKicker:"Portfolio", wkTitle:"Selected Works",
+            wk2K:"Design · Identity", wk2T:"Kit · Logo · Covers", wk2S:"The visual identity of the club, designed by its founder.",
+            wk2L1:"Home kit — white with navy pinstripes, navy sleeves and collar, gold-and-black hexagonal lion crest",
+            wk2L2:"Negative-space wordmark — BACHELORS, with the O drawn as a football",
+            wk2L3:"Facebook covers in navy, white and black",
+                        wk3K:"The club itself", wk3T:"The Bachelors FC", wk3S:"The most substantial of my works: an institution, not merely a team.",
+            wk3L1:"Founded 2026 in Khulshi, Chittagong — apolitical and non-profit",
+            wk3L2:"Built for bachelor youth: brotherhood, discipline, leadership, purpose",
+            wk3L3:"Motto: “Forged in Brotherhood, Driven by Purpose” — United, Not Alone",
+            wk3L4:"No sponsors and no stadium; a membership of sixteen, and growing",
+            wkLink2:"Enter the club site",
+            reach:"For professional enquiries — teaching, community work or football — please contact me through any of the channels below.",
+            cEmailK:"Email", cClubK:"The club",
+            footMid:"Khulshi, Chittagong · One man, three worlds", footR:"United, Not Alone",
+            navAsk:"FAQ",
+            askKicker:"Frequently Asked Questions", askTitle:"Questions and Answers",
+            askIntro:"Responses to the questions most frequently addressed to me.",
+            qa1K:"The club", qa1Q:"Why did you start The Bachelors FC?",
+            qa1A:"For the bachelor youth of Khulshi, who needed a place to belong. I founded the club in 2026 as an apolitical, non-profit home for them — without sponsors and without a stadium — founded upon brotherhood, discipline and purpose, with character valued above trophies.",
+            qa2K:"The classroom", qa2Q:"What do you do as a teacher?",
+            qa2A:"I am an Assistant Teacher (English) at Madrasha Khairul Ummah in Chittagong, a post I have held since April 2026, teaching English to students from Grades 3 to 10. My responsibilities comprise designing lesson plans aligned with curriculum standards, monitoring student progress and providing feedback, and supporting classroom management and student engagement.",
+            qa3K:"On the pitch", qa3Q:"What position do you play?",
+            qa3A:"Goalkeeper, in the #99 shirt. On 29 October 2026, I additionally assumed the captain's armband: one captain, one armband, and the final line upon which the team relies.",
+            qa5K:"The mind", qa5Q:"What is your personality type?",
+            qa5A:"My personality type, as assessed by 16Personalities, is INTJ-A — “The Architect”.",
+            qa6K:"The student years", qa6Q:"Where did you study?",
+            qa6A:"Port City International University (PCIU), Chittagong, where I completed a B.A. in English Language and Literature (Class of 2026). My undergraduate thesis, “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”, was supervised by Md. Rashed Khan Milon. I originate from Satkania and am based in Chittagong. My languages are Bengali (native), English (professional working proficiency; Duolingo English Score 129), Hindi (working knowledge) and Arabic (spoken).",
+            mBarHint:"Select a bar, or a letter above, to view its interpretation in plain terms.",
+            tlPrev:"← Previous", tlNext:"Next →",
+            odKicker:"Personal", odTitle:"Interests",
+            odIntro:"A brief list of my hobbies and personal interests.",
+            odHobT:"Hobbies",
+            hb1:"Reading", hb2:"Traveling", hb3:"Fishing", hb4:"Cooking", hb5:"Horseback Riding", hb6:"Archery", hb7:"Solitude-loving",
+            od1K:"Watches · TV", od2K:"Follows", od3K:"Listens to",
+            od3V:"Muhammad Anas Nazeer · Abdurehman Huzaifi — nasheed",
+          },
+          bn: {
+            navStory:"পরিচিতি", navWorlds:"অভিজ্ঞতা", navMind:"ব্যক্তিত্ব", navOff:"আগ্রহ", navWorks:"নির্বাচিত কাজ", navContact:"যোগাযোগ",
+            heroTag:"চট্টগ্রাম, বাংলাদেশ",
+            name1:"সাইদুল মোস্তফা", name2:"চৌধুরী",
+            scrollCue:"নিচে দেখুন",
+            storyKicker:"প্রোফাইল", storyTitle:"আমার সম্পর্কে",
+            storyP1:"আমি চট্টগ্রামের মাদরাসা খাইরুল উম্মাহে সহকারী শিক্ষক (ইংরেজি) হিসেবে কর্মরত আছি; ২০২৬ সালের এপ্রিল মাস থেকে আমি ৩য় থেকে ১০ম শ্রেণির শিক্ষার্থীদের ইংরেজি শিক্ষা দিচ্ছি। আমি পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি থেকে ইংরেজি ভাষা ও সাহিত্যে বি.এ. (সম্মান) ডিগ্রি অর্জন করেছি (ক্লাস অব ২০২৬), এবং আমি The Bachelors FC-এর প্রতিষ্ঠাতা ও অধিনায়ক। শিক্ষকতা ও ফুটবলের পাশাপাশি আমি চট্টগ্রামে সামাজিক ও যুব-কল্যাণমূলক কর্মকাণ্ডে সক্রিয়ভাবে যুক্ত আছি।",
+            storyP2:"এই পেজে আমার পেশাগত অভিজ্ঞতা, শিক্ষাগত যোগ্যতা, দক্ষতা ও সামাজিক কর্মকাণ্ডের সংক্ষিপ্ত বিবরণ উপস্থাপিত হয়েছে।",
+            g1K:"দিনের বেলা", g1V:"শিক্ষক", g1S:"সহকারী শিক্ষক (ইংরেজি) · মাদরাসা খাইরুল উম্মাহ",
+            g2K:"হৃদয়ে", g2V:"প্রতিষ্ঠাতা", g2S:"The Bachelors FC · প্রতিষ্ঠা ২০২৬, খুলশী",
+            g3K:"গোলে", g3V:"ক্যাপ্টেন", g3S:"গোলকিপার · জার্সি #৯৯ · ক্লাবের অধিনায়ক",
+            g4K:"মনে", g4V:"INTJ-A", g4S:"“দ্য আর্কিটেক্ট” · 16Personalities, নভেম্বর ২০২৬",
+            g5K:"শিকড়", g5V:"সাতকানিয়া, চট্টগ্রাম", g5S:"জন্মস্থান সাতকানিয়া · থাকি ও কাজ করি চট্টগ্রামে",
+            g6K:"ভাষা", g6V:"বাংলা · ইংরেজি · হিন্দি · আরবি", g6S:"বাংলা — মাতৃভাষা · ইংরেজি — পেশাগত কর্মদক্ষতা (Duolingo English Score 129) · হিন্দি — কাজ চালানোর মতো জ্ঞান (শোনা/বলা) · আরবি — বলতে পারি",
+            g7K:"শিক্ষা", g7V:"বি.এ. ইংরেজি, PCIU", g7S:"ইংরেজি ভাষা ও সাহিত্য · ক্লাস অব ২০২৬",
+            thesisK:"আমার স্নাতক থিসিস", thesisT:"“Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”", thesisS:"তত্ত্বাবধায়ক: Md. Rashed Khan Milon · বি.এ. (সম্মান) ইংরেজি ভাষা ও সাহিত্য, PCIU",
+            artK:"জার্নাল প্রবন্ধ · পাণ্ডুলিপি", artStatus:"আমার স্নাতক থিসিস থেকে তৈরি, একটি পিয়ার-রিভিউড জার্নালে জমা দেওয়ার জন্য প্রস্তুত জার্নাল-সংস্করণ।", artAbs:"“নৈতিক দ্বন্দ্ব হার্ডির Tess of the d'Urbervilles-এর কোনো গৌণ বিষয় নয়, বরং এর কাঠামোগত মূলনীতি। টেসকে বারবার এমন পরিস্থিতিতে ফেলা হয়েছে যেখানে প্রতিটি পথেই রয়েছে ক্ষতি কিংবা আপস, ফলে নৈতিক ব্যর্থতা তার নিজের পছন্দের চেয়ে বেশি সেই অসমান ব্যবস্থারই, যার ভেতরে তাকে বেছে নিতে হয়।”", artRead:"পাণ্ডুলিপিটি পড়ুন (PDF)", artOrcid:"ORCID-তে থিসিসের রেকর্ড",
+            wkArtK:"গবেষণা · লেখালেখি", wkArtT:"Virtue on Trial — the Journal Article", wkArtS:"আমার থিসিসের জার্নাল-সংস্করণ — হার্ডির Tess-এ নৈতিকতা, জেন্ডার ও সামাজিক বিচার নিয়ে।", wkArtL1:"উৎস — PCIU-তে আমার বি.এ. (সম্মান) থিসিস, তত্ত্বাবধায়ক Md. Rashed Khan Milon", wkArtL2:"মূল যুক্তি: নৈতিক দ্বন্দ্বই উপন্যাসটির কাঠামোগত মূলনীতি, কোনো পার্শ্ব-বিষয় নয়", wkArtL3:"অবস্থা: পিয়ার-রিভিউড জার্নালে জমা দেওয়ার জন্য প্রস্তুত পাণ্ডুলিপি; ORCID-তে লিপিবদ্ধ", wkArtLink:"পাণ্ডুলিপিটি পড়ুন (PDF)",
+            rolesK:"আমার খাতায় আরও যা আছে",
+            r1:"ক্যাম্পাস অ্যাম্বাসেডর — তামাকমুক্ত আমরা (Tobacco Free We) · ২০২২ সাল থেকে",
+            r2:"Distributor & Ambassador — SHOLO, স্বতন্ত্র যুব সংগঠন · জুলাই ২০২৬ থেকে",
+            r3:"BNCC ক্যাডেট, নেভি উইং · ২০১৭–২০১৯",
+            brandName:"সাইদুল মোস্তফা চৌধুরী",
+            tKicker:"অভিজ্ঞতা · শিক্ষকতা", tWord:"শিক্ষক",
+            tStory1:"শিক্ষকতাই আমার পেশা — আমার জগৎসমূহের প্রথমটি, যার ভিত্তির উপর বাকিগুলো গড়ে উঠেছে। ২০২৬ সালের এপ্রিল মাস থেকে আমি চট্টগ্রামের মাদরাসা খাইরুল উম্মাহে সহকারী শিক্ষক (ইংরেজি) হিসেবে দায়িত্ব পালন করছি এবং ৩য় থেকে ১০ম শ্রেণির শিক্ষার্থীদের ইংরেজি পড়াচ্ছি। এটি ধৈর্য ও নিষ্ঠার দৈনন্দিন কাজ: শিক্ষার্থীদের নিজের ভাষা খুঁজে পেতে এবং সেই ভাষার প্রতি আত্মবিশ্বাস অর্জনে সহায়তা করা।",
+            tStory2:"আমার পেশাগত মানদণ্ডের উৎস এই শ্রেণিকক্ষই। আমি যথাযথ প্রস্তুতি গ্রহণ করি, যা বলি তা বিবেচনা করে বলি, এবং অন্যের সময় অপচয় করি না। পরবর্তীতে আমার প্রতিষ্ঠিত ক্লাবেও সেই একই ধারার প্রতিফলন দেখা যায়।",
+            tStory3:"আমার পেশাগত দায়িত্বসমূহ, প্রোফাইলে লিপিবদ্ধ অনুযায়ী: পাঠ্যক্রমের মানদণ্ড অনুযায়ী পাঠ-পরিকল্পনা প্রণয়ন, শিক্ষার্থীদের অগ্রগতি পর্যবেক্ষণ ও মতামত প্রদান, এবং শ্রেণিকক্ষ ব্যবস্থাপনা ও শিক্ষার্থীদের সম্পৃক্ততায় সহায়তা প্রদান।",
+            t1K:"পেশা", t1V:"সহকারী শিক্ষক (ইংরেজি)",
+            t4K:"দায়িত্বে যেদিন থেকে", t4V:"এপ্রিল ২০২৬ · ৩য়–১০ম শ্রেণি",
+            t2K:"কর্মস্থল", t2V:"মাদরাসা খাইরুল উম্মাহ, চট্টগ্রাম",
+            t3K:"শিল্প", t3V:"ভাষা, ধৈর্য, মানদণ্ড",
+            skillsK:"আমার LinkedIn প্রোফাইল থেকে", skillsH:"আমি যেগুলোতে ভালো", skillsNote:"আমার LinkedIn প্রোফাইলে লিপিবদ্ধ প্রধান পেশাগত দক্ষতাসমূহ। ★ চিহ্নিত তিনটি আমার সর্বাধিক গুরুত্বপূর্ণ দক্ষতা।",
+            sk1:"ইংরেজি শিক্ষাদান", sk2:"পাঠ-পরিকল্পনা", sk3:"কমিউনিটি নেতৃত্ব", sk4:"শিক্ষাদান পদ্ধতি", sk5:"শিক্ষার্থী মেন্টরিং", sk6:"জনযোগাযোগ", sk7:"ইভেন্ট সমন্বয়", sk8:"দলগত সহযোগিতা", sk9:"সিদ্ধান্ত গ্রহণ", sk10:"সময় ব্যবস্থাপনা", sk11:"সোশ্যাল মিডিয়া ব্যবস্থাপনা", sk12:"একাডেমিক লেখালেখি", sk13:"Microsoft ও Google Workspace",
+            fKicker:"অভিজ্ঞতা · নেতৃত্ব ও কমিউনিটি", fWord:"প্রতিষ্ঠাতা",
+            fStory1:"২০২৬ সালে খুলশীতে আমি The Bachelors FC প্রতিষ্ঠা করি — একটি অরাজনৈতিক ও অলাভজনক ফুটবল ক্লাব, সেই ব্যাচেলর তরুণদের জন্য যাদের প্রয়োজন ছিল আত্মীয়তার একটি জায়গা। ক্লাবটির কোনো স্পনসর নেই, কোনো স্টেডিয়াম নেই; রয়েছে ক্রমবর্ধমান একটি ভ্রাতৃত্ব, একটি মূলমন্ত্র এবং একটি মানদণ্ড — ট্রফির ঊর্ধ্বে চরিত্র।",
+            fStory2:"আমি ক্লাবটির প্রতিষ্ঠাতা ও অধিনায়ক হিসেবে নেতৃত্ব প্রদান করি; এর মানদণ্ড, কর্মসূচি ও সদস্যদের সামগ্রিক দায়িত্ব আমার উপর ন্যস্ত — মাঠে এবং মাঠের বাইরে উভয় ক্ষেত্রেই।",
+            fQuote:"একটি ক্লাবকে মাপা হয় না সে কত ট্রফি জিতল তা দিয়ে — মাপা হয় সে কতজন মানুষকে নিজের কাছ থেকে বাঁচাল, তা দিয়ে।",
+            f1K:"প্রতিষ্ঠা", f1V:"২০২৬ · খুলশী, চট্টগ্রাম",
+            f2K:"মূলমন্ত্র", f2V:"“Forged in Brotherhood, Driven by Purpose”",
+            f3K:"অন্য পরিচয়ে", f3V:"“United, Not Alone” · সদস্য ১৬ জন",
+            cKicker:"অভিজ্ঞতা · খেলা ও নেতৃত্ব", cWord:"ক্যাপ্টেন",
+            cStory1:"২০২৬ সালের ২৯ অক্টোবর আমি ক্লাবের অধিনায়কত্ব গ্রহণ করি: আর্মব্যান্ড ধারণ করে #৯৯ জার্সিতে গোলকিপারের দায়িত্ব নিই। আমি গোলপোস্টকে সেইভাবেই রক্ষা করি, যেভাবে রক্ষা করি ক্লাবটিকেই — সুসংগঠিতভাবে, চাপের মুখে স্থিরচিত্তে, সকল সদস্যের নির্ভরতার শেষ প্রাচীর হিসেবে।",
+            cStory2:"ক্লাবের প্রথম ফুটবল ম্যাচটি অনুষ্ঠিত হয় ২০২৬ সালের ৬ নভেম্বর, ডিজেল কলোনি খেলার মাঠে, Madrasha Khairul Ummah FC-এর বিরুদ্ধে — যে প্রতিষ্ঠানে আমি শিক্ষকতা করি, সেই প্রতিষ্ঠানেরই দল। দিনে শ্রেণিকক্ষে সহকর্মী ও শিক্ষার্থী; ম্যাচের দিনে প্রতিপক্ষ। উভয় দলই ভালো খেলেছে, সকলে উপভোগ করেছে এবং দুই পক্ষের মধ্যে ভ্রাতৃত্ব আরও সুদৃঢ় হয়েছে।",
+            cs1K:"গোলে খেলা ম্যাচ", cs2K:"সেভ", cs3K:"প্যাশন — নিজের দেওয়া রেটিং",
+            c1K:"অধিনায়ক যেদিন থেকে", c1V:"২৯ অক্টোবর ২০২৬",
+            c2K:"পজিশন", c2V:"গোলকিপার · জার্সি #৯৯",
+            c3K:"প্রথম ম্যাচ", c3V:"৬ নভেম্বর ২০২৬ · বনাম Madrasha Khairul Ummah FC", cCap:"আমার ব্যাচমেটদের সঙ্গে — ইংরেজি ২৮তম ব্যাচ, পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি",
+            mKicker:"ব্যক্তিত্ব", mTitle:"ব্যক্তিত্ব",
+            mIntro:"16Personalities-এর মূল্যায়ন অনুযায়ী আমার পার্সোনালিটি টাইপ INTJ-A — “The Architect”।",
+            tr1K:"শক্তি", tr1V:"অন্তর্মুখী", tr1L:"বহির্মুখী", tr1R:"অন্তর্মুখী",
+            tr2K:"মন", tr2V:"অন্তর্দৃষ্টিনির্ভর", tr2L:"অন্তর্দৃষ্টিনির্ভর", tr2R:"পর্যবেক্ষণনির্ভর",
+            tr3K:"স্বভাব", tr3V:"যুক্তিনির্ভর", tr3L:"যুক্তিনির্ভর", tr3R:"অনুভূতিনির্ভর",
+            tr4K:"কৌশল", tr4V:"পরিকল্পনামুখী", tr4L:"পরিকল্পনামুখী", tr4R:"অনুসন্ধানমুখী",
+            tr5K:"পরিচয়", tr5V:"আত্মবিশ্বাসী", tr5L:"আত্মবিশ্বাসী", tr5R:"অস্থির",
+            driveT:"যা আমাকে চালায়",
+            d1:"দূরদৃষ্টি, বাস্তববুদ্ধির সঙ্গে বাঁধা", d2:"কৌশলগত, দীর্ঘমেয়াদি চিন্তা",
+            d3:"সিস্টেমের উন্নয়ন — অদক্ষতা আমার চোখে পড়ে যায়", d4:"স্বাধীনতা — তদারকি ছাড়াই আমি সবচেয়ে ভালো কাজ করি",
+            d5:"বস্তুনিষ্ঠ বিচার — পক্ষপাতের ঊর্ধ্বে তথ্য",
+            watchT:"নিজের যেদিকে আমি নজর রাখি",
+            w1:"সরাসরি ফিডব্যাক — আগে সত্য, পরে কৌশল", w2:"রুটিন আর লাল ফিতায় অধৈর্য",
+            w3:"দায়িত্ব ভাগ না করে সব নিজে করি", w4:"নিখুঁতের প্রতি ঝোঁক, যা বার্নআউটে যেতে পারে",
+            pascalQ:"মানুষ একটি চিন্তাশীল নলখাগড়া।", pascalA:"— ব্লেজ পাসকাল, আমার পার্সোনালিটি ফলাফল থেকে",
+            mindNote:"আমার পার্সোনালিটি সম্পর্কে একটি পূর্ণাঙ্গ INTJ-A প্রতিবেদন ইংরেজি ও বাংলা উভয় ভাষায় রয়েছে; অনুরোধ করলেই তা পাওয়া যাবে। সেই সঙ্গে একটি যুক্তিসংগত সতর্কীকরণ: 16Personalities আত্ম-প্রতিফলনের একটি মাধ্যম, বৈজ্ঞানিক রোগনির্ণয় নয়। এর শতাংশগুলোকে ভাগ্য হিসেবে নয়, দিকনির্দেশনা হিসেবে গ্রহণ করাই শ্রেয়।",
+            jKicker:"পেশা ও কমিউনিটি", jTitle:"সময়রেখা",
+            jIntro:"আমার শিক্ষা, পেশা ও কমিউনিটি-ভূমিকার কালানুক্রমিক সারসংক্ষেপ।",
+            tl0D:"জুলাই ২০১৭ – মে ২০১৯", tl0T:"BNCC ক্যাডেট", tl0S:"বাংলাদেশ ন্যাশনাল ক্যাডেট কোর, নেভি উইং — হাজেরা-তাজু ডিগ্রি কলেজ প্লাটুন, চান্দগাঁও, চট্টগ্রাম। এখানেই আমার শৃঙ্খলাবোধের প্রাথমিক ভিত্তি গড়ে ওঠে।",
+            tl1D:"মে ২০২২ – বর্তমান", tl1T:"ক্যাম্পাস অ্যাম্বাসেডর — তামাকমুক্ত আমরা", tl1S:"আমি ক্যাম্পাসে তামাকমুক্ত সচেতনতা প্রচার করি এবং শিক্ষার্থীদের সম্পৃক্ত করতে ক্যাম্পেইন ও অনুষ্ঠান আয়োজন করি। আমি এখনো এই দায়িত্বে আছি।",
+            tlPD:"আগস্ট ২০২৫ – মে ২০২৬", tlPT:"সদস্য — PCIU English Club (PCEC)", tlPS:"PCIU English Club (PCEC)-এর সদস্য হিসেবে আমি ক্লাবের অনুষ্ঠান ও ইংরেজি কর্মশালা আয়োজনে সহায়তা করেছি।",
+            tl2D:"২০২৬", tl2T:"PCIU থেকে স্নাতক", tl2S:"ইংরেজি ভাষা ও সাহিত্যে বি.এ., পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি — ক্লাস অব ২০২৬। আমার স্নাতক থিসিস ছিল “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”; তত্ত্বাবধায়ক ছিলেন Md. Rashed Khan Milon।",
+            tl3D:"এপ্রিল ২০২৬", tl3T:"সহকারী শিক্ষক (ইংরেজি)", tl3S:"মাদরাসা খাইরুল উম্মাহ, চট্টগ্রামে সহকারী শিক্ষক (ইংরেজি) হিসেবে যোগদান করি — ৩য় থেকে ১০ম শ্রেণির শিক্ষার্থীদের ইংরেজি পড়াই।",
+            tl4D:"জুলাই ২০২৬", tl4T:"The Bachelors FC প্রতিষ্ঠা করি", tl4S:"খুলশীতে প্রতিষ্ঠিত ক্লাবটির Founder ও Captain। একই মাসে আমি SHOLO-র Distributor ও Ambassador হই; SHOLO একটি স্বতন্ত্র যুব সংগঠন (sholo.org)। আমি সংগঠনটির প্রকাশনা বিতরণ করি এবং PCIU ও আমার খুলশী এলাকায় এর প্রতিনিধিত্ব করি।",
+            tl6D:"২৯ অক্টোবর ২০২৬", tl6T:"ক্লাবের অধিনায়ক নির্বাচিত হই", tl6S:"গোলপোস্টে আর্মব্যান্ড ও #৯৯ জার্সি ধারণ করি — একজন অধিনায়ক, একটি আর্মব্যান্ড।",
+            tl7D:"৬ নভেম্বর ২০২৬", tl7T:"ক্লাবের প্রথম ফুটবল ম্যাচ", tl7S:"ডিজেল কলোনি খেলার মাঠে — প্রতিপক্ষ Madrasha Khairul Ummah FC, আমার নিজের প্রতিষ্ঠানের দল। উভয় পক্ষই ভালো খেলেছে এবং ভ্রাতৃত্ব আরও সুদৃঢ় হয়েছে।",
+            tl9D:"আসছে", tl9T:"পরের অধ্যায়টি লেখা হচ্ছে", tl9S:"এই বিবরণ এখনো চলমান; পরবর্তী অধ্যায়সমূহ যথাসময়ে যুক্ত হবে।",
+            wkKicker:"পোর্টফোলিও", wkTitle:"নির্বাচিত কাজ",
+            wk2K:"ডিজাইন · পরিচয়", wk2T:"কিট · লোগো · কভার", wk2S:"ক্লাবের ভিজ্যুয়াল পরিচয় — এর প্রতিষ্ঠাতা হিসেবে আমার নিজের নকশা করা।",
+            wk2L1:"হোম কিট — সাদা গায়ে নেভি পিনস্ট্রাইপ, নেভি হাতা ও কলার, সোনালি-কালো ষড়ভুজ সিংহ ক্রেস্ট",
+            wk2L2:"নেগেটিভ-স্পেস ওয়ার্ডমার্ক — BACHELORS, যেখানে O আঁকা একটি ফুটবল",
+            wk2L3:"নেভি, সাদা ও কালো রঙে ফেসবুক কভার",
+                        wk3K:"ক্লাব নিজেই", wk3T:"The Bachelors FC", wk3S:"আমার সবচেয়ে উল্লেখযোগ্য কাজ — শুধু একটি দল নয়, একটি প্রতিষ্ঠান।",
+            wk3L1:"২০২৬ সালে খুলশী, চট্টগ্রামে প্রতিষ্ঠিত — অরাজনৈতিক ও অলাভজনক",
+            wk3L2:"ব্যাচেলর তরুণদের জন্য গড়া: ভ্রাতৃত্ব, শৃঙ্খলা, নেতৃত্ব, উদ্দেশ্য",
+            wk3L3:"মূলমন্ত্র: “Forged in Brotherhood, Driven by Purpose” — United, Not Alone",
+            wk3L4:"কোনো স্পনসর নেই, কোনো স্টেডিয়াম নেই; সদস্যসংখ্যা ষোলো এবং ক্রমবর্ধমান",
+            wkLink2:"ক্লাবের সাইটে যান",
+            reach:"পেশাগত যোগাযোগের জন্য — শিক্ষকতা, কমিউনিটি-কাজ বা ফুটবল — নিচের যেকোনো মাধ্যমে আমার সঙ্গে যোগাযোগ করুন।",
+            cEmailK:"ইমেইল", cClubK:"ক্লাব",
+            footMid:"খুলশী, চট্টগ্রাম · একজন মানুষ, তিনটি জগৎ", footR:"United, Not Alone",
+            navAsk:"প্রশ্নোত্তর",
+            askKicker:"সাধারণ প্রশ্ন", askTitle:"প্রশ্ন ও উত্তর",
+            askIntro:"আমাকে সর্বাধিক জিজ্ঞাসিত প্রশ্নসমূহের উত্তর।",
+            qa1K:"ক্লাব", qa1Q:"আপনি কেন The Bachelors FC প্রতিষ্ঠা করলেন?",
+            qa1A:"খুলশীর সেই ব্যাচেলর তরুণদের জন্য, যাদের প্রয়োজন ছিল আত্মীয়তার একটি জায়গা। ২০২৬ সালে আমি ক্লাবটি প্রতিষ্ঠা করি একটি অরাজনৈতিক ও অলাভজনক আশ্রয় হিসেবে — কোনো স্পনসর ছাড়া, কোনো স্টেডিয়াম ছাড়া — ভ্রাতৃত্ব, শৃঙ্খলা ও উদ্দেশ্যের ভিত্তিতে, যেখানে ট্রফির চেয়ে চরিত্রের মূল্য অধিক।",
+            qa2K:"শ্রেণিকক্ষ", qa2Q:"শিক্ষক হিসেবে আপনি কী করেন?",
+            qa2A:"আমি চট্টগ্রামের মাদরাসা খাইরুল উম্মাহে সহকারী শিক্ষক (ইংরেজি); ২০২৬ সালের এপ্রিল মাস থেকে এই পদে আছি এবং ৩য় থেকে ১০ম শ্রেণির শিক্ষার্থীদের ইংরেজি পড়াই। আমার দায়িত্বের মধ্যে রয়েছে: পাঠ্যক্রমের মানদণ্ড অনুযায়ী পাঠ-পরিকল্পনা প্রণয়ন, শিক্ষার্থীদের অগ্রগতি পর্যবেক্ষণ ও মতামত প্রদান, এবং শ্রেণিকক্ষ ব্যবস্থাপনা ও শিক্ষার্থীদের সম্পৃক্ততায় সহায়তা প্রদান।",
+            qa3K:"মাঠে", qa3Q:"আপনি কোন পজিশনে খেলেন?",
+            qa3A:"গোলকিপার — #৯৯ জার্সিতে। ২০২৬ সালের ২৯ অক্টোবর আমি অধিনায়কের আর্মব্যান্ডও ধারণ করি: একজন অধিনায়ক, একটি আর্মব্যান্ড এবং দলের নির্ভরতার শেষ প্রাচীর।",
+            qa5K:"মন", qa5Q:"আপনার পার্সোনালিটি টাইপ কী?",
+            qa5A:"16Personalities-এর মূল্যায়ন অনুযায়ী আমার পার্সোনালিটি টাইপ INTJ-A — “The Architect”।",
+            qa6K:"ছাত্রজীবন", qa6Q:"আপনি কোথায় পড়াশোনা করেছেন?",
+            qa6A:"চট্টগ্রামের পোর্ট সিটি ইন্টারন্যাশনাল ইউনিভার্সিটি (PCIU) — ইংরেজি ভাষা ও সাহিত্যে বি.এ., ক্লাস অব ২০২৬। আমার স্নাতক থিসিস ছিল “Virtue on Trial: Exploring Ethical Dilemmas in Hardy's Tess of the d'Urbervilles”; তত্ত্বাবধায়ক ছিলেন Md. Rashed Khan Milon। আমার জন্মস্থান সাতকানিয়া, বর্তমানে চট্টগ্রামে বসবাস করি। আমার ভাষাসমূহ: বাংলা (মাতৃভাষা), ইংরেজি (পেশাগত কর্মদক্ষতা — Duolingo English Score 129), হিন্দি (কার্যচালনার উপযোগী জ্ঞান) ও আরবি (মৌখিক)।",
+            mBarHint:"সহজ ভাষায় ব্যাখ্যা দেখতে যেকোনো বারে অথবা উপরের কোনো অক্ষরে ট্যাপ করুন।",
+            tlPrev:"← আগেরটি", tlNext:"পরেরটি →",
+            odKicker:"ব্যক্তিগত", odTitle:"আগ্রহ ও শখ",
+            odIntro:"আমার শখ ও ব্যক্তিগত আগ্রহের সংক্ষিপ্ত তালিকা।",
+            odHobT:"শখ",
+            hb1:"পড়াশোনা", hb2:"ভ্রমণ", hb3:"মাছ ধরা", hb4:"রান্না", hb5:"ঘোড়ায় চড়া", hb6:"তীরন্দাজি", hb7:"নির্জনতাপ্রিয়",
+            od1K:"দেখেন · টিভি", od2K:"অনুসরণ করেন", od3K:"শোনেন",
+            od3V:"Muhammad Anas Nazeer · Abdurehman Huzaifi — নাশিদ",
+          }
+        };
+
+        var LETTERS = {
+          en: {
+            I:{ title:"I — Introverted <span class=\"pct\">· 78%</span>", body:"My most pronounced trait. I restore my energy in solitude, prefer small circles to crowds, and value depth over small talk. It is for this reason that my work is accomplished quietly, and that a classroom and a club each receive my complete attention, one at a time." },
+            N:{ title:"N — Intuitive <span class=\"pct\">· 56%</span>", body:"I discern patterns and possibilities before particulars. The preference is a lean rather than a landslide: I plan for what may be, while remaining grounded in what is. The club, and this page itself, existed complete in my mind before they existed anywhere else." },
+            T:{ title:"T — Thinking <span class=\"pct\">· 63%</span>", body:"My decisions are governed first by logic and evidence, and by fairness rather than favouritism; the rule is the same whether I am selecting a team, adjudicating a club matter, or evaluating my own work. Feelings are heard; they do not cast the deciding vote." },
+            J:{ title:"J — Judging <span class=\"pct\">· 56%</span>", body:"Structure, planning and follow-through. Every undertaking is given a sequence and an end state: fixture lists, lesson plans, publication schedules. The score, however, lies near the middle — the plan is firm, yet it may be redrawn when circumstances change." },
+            A:{ title:"-A — Assertive <span class=\"pct\">· 53%</span>", body:"A calm self-assurance, situated almost exactly upon the centre line. I am confident in what I have built and unmoved by the noise around it; and because the margin is small, I am able to bend under pressure rather than break. The reed bends; the roots hold." }
+          },
+          bn: {
+            I:{ title:"I — অন্তর্মুখী <span class=\"pct\">· ৭৮%</span>", body:"আমার সবচেয়ে প্রকট বৈশিষ্ট্য। আমি নির্জনতায় শক্তি সঞ্চয় করি, ভিড়ের চেয়ে সীমিত পরিসর পছন্দ করি এবং হালকা আড্ডার চেয়ে গভীরতাকে প্রাধান্য দিই। এই কারণেই আমার কাজ সম্পন্ন হয় নীরবে, এবং শ্রেণিকক্ষ ও ক্লাব — প্রতিটি একে একে আমার পূর্ণ মনোযোগ লাভ করে।" },
+            N:{ title:"N — অন্তর্দৃষ্টিনির্ভর <span class=\"pct\">· ৫৬%</span>", body:"আমি খুঁটিনাটির আগে ধরন ও সম্ভাবনা অনুধাবন করি। এই ঝোঁক প্রবল, তবে একমুখী নয়: যা হতে পারে তার জন্য পরিকল্পনা করি, আবার বাস্তবের ভিত্তিতেও দৃঢ় থাকি। ক্লাব এবং এই পেজ — অন্য কোথাও অস্তিত্ব লাভের আগেই দুটোই আমার মনে সম্পূর্ণ রূপ পেয়েছিল।" },
+            T:{ title:"T — যুক্তিনির্ভর <span class=\"pct\">· ৬৩%</span>", body:"আমার সিদ্ধান্ত প্রথমে যুক্তি ও প্রমাণ দ্বারা পরিচালিত হয়; পক্ষপাতের চেয়ে ন্যায্যতাই প্রাধান্য পায়। দল নির্বাচন, ক্লাবের কোনো বিষয়ের মীমাংসা কিংবা নিজের কাজের মূল্যায়ন — সর্বক্ষেত্রে নিয়ম একই। অনুভূতিকে শোনা হয়, তবে চূড়ান্ত সিদ্ধান্ত তার হাতে থাকে না।" },
+            J:{ title:"J — পরিকল্পনামুখী <span class=\"pct\">· ৫৬%</span>", body:"কাঠামো, পরিকল্পনা ও শেষ পর্যন্ত সম্পন্ন করা। প্রতিটি উদ্যোগের একটি ধারাবাহিকতা ও একটি চূড়ান্ত অবস্থা নির্ধারিত থাকে — ফিক্সচার তালিকা, পাঠ-পরিকল্পনা, প্রকাশনা-সূচি। তবে স্কোরটি মাঝামাঝির কাছাকাছি: পরিকল্পনা দৃঢ়, কিন্তু পরিস্থিতি বদলালে তা পুনর্নির্ধারণ করা যায়।" },
+            A:{ title:"-A — আত্মবিশ্বাসী <span class=\"pct\">· ৫৩%</span>", body:"একটি স্থির আত্মবিশ্বাস, প্রায় ঠিক কেন্দ্ররেখায় অবস্থিত। নিজের গড়া বিষয়ের উপর আমার আস্থা আছে এবং পারিপার্শ্বিক কোলাহলে আমি বিচলিত হই না; ব্যবধান সামান্য বলেই চাপের মুখে ভেঙে না পড়ে নমনীয় হতে পারি। নলখাগড়া বাঁকে; শিকড় ধরে রাখে।" }
+          }
+        };
+
+        var lang = "en";
+        var currentLetter = "I";
+        var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        /* ---- essence line, word by word ---- */
+        function renderEssence(){
+          [{ id:"essenceLine", src:ESSENCE }].forEach(function(item){
+            var id = item.id;
+            var text = item.src[lang];
+            var el = document.getElementById(id);
+            if (!el) return;
+            el.classList.remove("play");
+            el.innerHTML = "";
+            text.split(" ").forEach(function(word, i){
+              var s = document.createElement("span");
+              s.className = "w";
+              s.textContent = word;
+              s.style.transitionDelay = reduced ? "0ms" : (i * 130) + "ms";
+              el.appendChild(s);
+              el.appendChild(document.createTextNode(" "));
+            });
+            requestAnimationFrame(function(){
+              requestAnimationFrame(function(){ el.classList.add("play"); });
+            });
+          });
+        }
+
+        /* ---- letters ---- */
+        function setLetter(key){
+          currentLetter = key;
+          var d = LETTERS[lang][key];
+          var lt = document.getElementById("letterTitle"), lb = document.getElementById("letterBody");
+          if (!lt || !lb) return;
+          lt.innerHTML = d.title;
+          lb.textContent = d.body;
+          var chips = document.querySelectorAll(".lchip");
+          for (var i = 0; i < chips.length; i++){
+            var on = chips[i].getAttribute("data-letter") === key;
+            chips[i].classList.toggle("active", on);
+            chips[i].setAttribute("aria-selected", on ? "true" : "false");
+          }
+          document.querySelectorAll(".tbar").forEach(function(b, j){
+            b.classList.toggle("sel", traitKeys[j] === key);
+          });
+        }
+        document.querySelectorAll(".lchip").forEach(function(chip){
+          chip.addEventListener("click", function(){ setLetter(chip.getAttribute("data-letter")); });
+        });
+
+        /* ---- trait bars open the same plain-language explanations ---- */
+        var traitKeys = ["I","N","T","J","A"];
+        document.querySelectorAll(".tbar").forEach(function(bar, i){
+          var key = traitKeys[i];
+          bar.setAttribute("role", "button");
+          bar.setAttribute("tabindex", "0");
+          function openTrait(){
+            setLetter(key);
+            document.getElementById("letterPanel").scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+          }
+          bar.addEventListener("click", openTrait);
+          bar.addEventListener("keydown", function(e){
+            if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openTrait(); }
+          });
+        });
+
+        /* ---- language ---- */
+        function applyLang(l){
+          lang = l;
+          document.documentElement.lang = (l === "bn") ? "bn" : "en";
+          document.body.classList.toggle("bn", l === "bn");
+          var dict = I18N[l];
+          document.querySelectorAll("[data-i18n]").forEach(function(node){
+            var key = node.getAttribute("data-i18n");
+            if (dict[key] !== undefined) node.textContent = dict[key];
+          });
+          document.getElementById("langLabel").textContent = (l === "bn") ? "EN" : "বাংলা";
+          setLetter(currentLetter);
+          renderEssence();
+          syncTlPanel();
+        }
+        document.getElementById("langToggle").addEventListener("click", function(){
+          applyLang(lang === "en" ? "bn" : "en");
+        });
+
+        /* ---- accent ---- */
+        function setAccent(c){ document.documentElement.style.setProperty("--acc", c); }
+
+        /* ---- accent follows the scroll (colour journey) ---- */
+        if ("IntersectionObserver" in window){
+          var accObs = new IntersectionObserver(function(entries){
+            entries.forEach(function(e){
+              if (e.isIntersecting) setAccent(e.target.getAttribute("data-acc"));
+            });
+          }, { rootMargin: "-38% 0px -52% 0px" });
+          document.querySelectorAll("[data-acc]").forEach(function(s){
+            if (s.tagName === "SECTION") accObs.observe(s);
+          });
+        }
+
+        /* ---- scroll reveal ---- */
+        if ("IntersectionObserver" in window && !reduced){
+          var rvObs = new IntersectionObserver(function(entries){
+            entries.forEach(function(e){
+              if (e.isIntersecting){ e.target.classList.add("in"); rvObs.unobserve(e.target); }
+            });
+          }, { threshold: 0.12 });
+          document.querySelectorAll(".rv").forEach(function(el){ rvObs.observe(el); });
+        } else {
+          document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
+        }
+
+        /* ---- slim nav: hamburger dropdown ---- */
+        var siteNav = document.getElementById("siteNav");
+        var burger = document.getElementById("navBurger");
+        if (siteNav && burger){
+          burger.addEventListener("click", function(){
+            var open = siteNav.classList.toggle("open");
+            burger.setAttribute("aria-expanded", open ? "true" : "false");
+          });
+          siteNav.querySelectorAll(".drop-links a").forEach(function(a){
+            a.addEventListener("click", function(){
+              siteNav.classList.remove("open");
+              burger.setAttribute("aria-expanded", "false");
+            });
+          });
+          document.addEventListener("keydown", function(e){
+            if (e.key === "Escape"){ siteNav.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); }
+          });
+        }
+
+        /* ---- off-duty hobby chips ---- */
+        document.querySelectorAll(".od-chip").forEach(function(chip){
+          chip.addEventListener("click", function(){
+            var on = chip.classList.toggle("on");
+            chip.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+        });
+
+        /* ---- skills chips ---- */
+        document.querySelectorAll(".skill-chip").forEach(function(chip){
+          chip.addEventListener("click", function(){
+            var on = chip.classList.toggle("on");
+            chip.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+        });
+
+        /* ---- works expanders ---- */
+        document.querySelectorAll(".work").forEach(function(work){
+          var head = work.querySelector(".work-head");
+          var body = work.querySelector(".work-body");
+          head.addEventListener("click", function(){
+            var open = work.classList.toggle("open");
+            head.setAttribute("aria-expanded", open ? "true" : "false");
+            body.style.maxHeight = open ? body.scrollHeight + "px" : "0px";
+          });
+        });
+
+        /* ---- timeline: nodes + focused panel ---- */
+        var tlNodes = Array.prototype.slice.call(document.querySelectorAll(".tl-node:not(.end)"));
+        var tlIndex = 0;
+        function bnDigits(s){
+          if (lang !== "bn") return s;
+          return s.replace(/[0-9]/g, function(d){ return "০১২৩৪৫৬৭৮৯"[+d]; });
+        }
+        function syncTlPanel(){
+          var node = tlNodes[tlIndex];
+          if (!node) return;
+          document.getElementById("tlpDate").textContent = node.querySelector(".tl-date").textContent;
+          document.getElementById("tlpTitle").textContent = node.querySelector(".tl-title").textContent;
+          document.getElementById("tlpDesc").textContent = node.querySelector(".tl-desc").textContent;
+          document.getElementById("tlpCount").textContent = bnDigits((tlIndex + 1) + " / " + tlNodes.length);
+          document.getElementById("tlPrev").disabled = tlIndex === 0;
+          document.getElementById("tlNext").disabled = tlIndex === tlNodes.length - 1;
+        }
+        function selectTl(i){
+          tlIndex = Math.max(0, Math.min(tlNodes.length - 1, i));
+          tlNodes.forEach(function(n, j){ n.classList.toggle("active", j === tlIndex); });
+          syncTlPanel();
+        }
+        tlNodes.forEach(function(node, i){
+          node.addEventListener("click", function(){ selectTl(i); });
+        });
+        document.getElementById("tlPrev").addEventListener("click", function(){ selectTl(tlIndex - 1); });
+        document.getElementById("tlNext").addEventListener("click", function(){ selectTl(tlIndex + 1); });
+
+        /* ---- scroll progress bar ---- */
+        var pbarFill = document.getElementById("pbarFill");
+        var pTicking = false;
+        function updateProgress(){
+          var h = document.documentElement;
+          var max = h.scrollHeight - h.clientHeight;
+          var pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+          pbarFill.style.transform = "scaleX(" + (pct / 100) + ")";
+          pTicking = false;
+        }
+        window.addEventListener("scroll", function(){
+          if (!pTicking){ pTicking = true; requestAnimationFrame(updateProgress); }
+        }, { passive: true });
+        updateProgress();
+
+        /* ---- init ---- */
+        setLetter("I");
+        renderEssence();
+        syncTlPanel();
+      })();
+    </script>
+  
+  <script>
+    (function(){var tl=document.getElementById("timeline");if(!tl)return;var tick=false;
+      function upd(){var r=tl.getBoundingClientRect();var total=r.height-24;var done=(window.innerHeight*0.75)-r.top-12;
+        done=Math.max(0,Math.min(done,total));tl.style.setProperty("--tlf",total>0?(done/total):0);tick=false;}
+      function on(){if(!tick){tick=true;requestAnimationFrame(upd);}}
+      window.addEventListener("scroll",on,{passive:true});window.addEventListener("resize",on);upd();})();
+  </script>
+<div class="pv-ribbon">PREVIEW · Notun UI — eta live site na</div>
+</body>
+</html>
