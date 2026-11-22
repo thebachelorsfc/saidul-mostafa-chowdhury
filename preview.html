@@ -538,6 +538,17 @@
       .hdot{width:9px;height:9px;border-radius:50%;border:1.5px solid rgba(230,185,63,.85);background:transparent;padding:0;cursor:pointer;transition:all .25s}
       .hdot.on{background:#e6b93f;transform:scale(1.25)}
       .pv-ribbon{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:999;background:#0a1122;color:#e6b93f;border:1px solid #e6b93f;padding:9px 18px;border-radius:999px;font-weight:700;font-size:.85rem;box-shadow:0 12px 30px rgba(0,0,0,.35);white-space:nowrap}
+
+      /* ---------- HERO CAROUSEL MOTION (preview) ---------- */
+      .hslide{overflow:hidden}
+      .hdot{transition:all .35s}
+      .hdot.on{width:22px;border-radius:999px;transform:none}
+      @media (prefers-reduced-motion: no-preference){
+        .hslide img{animation:kenburns 7s ease-in-out infinite alternate}
+        @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.055)}}
+        .hcap-item.on{animation:capIn .45s cubic-bezier(.22,.8,.3,1)}
+        @keyframes capIn{from{opacity:0;transform:translateY(6px)}to{opacity:.75;transform:translateY(0)}}
+      }
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://saidul-mostafa-chowdhury.vercel.app/" />
@@ -1489,6 +1500,14 @@
       car.addEventListener("scroll",function(){if(tick)return;tick=true;requestAnimationFrame(function(){
         var i=Math.round(car.scrollLeft/car.clientWidth);if(i!==idx)set(Math.max(0,Math.min(caps.length-1,i)));tick=false;});},{passive:true});
       dots.forEach(function(d,j){d.addEventListener("click",function(){car.scrollTo({left:j*car.clientWidth,behavior:"smooth"});});});
+      var mq=window.matchMedia("(prefers-reduced-motion: reduce)"),timer=null,resume=null;
+      function go(i){car.scrollTo({left:i*car.clientWidth,behavior:"smooth"});}
+      function play(){if(mq.matches||timer)return;timer=setInterval(function(){if(!document.hidden)go((idx+1)%caps.length);},4500);}
+      function stop(){if(timer){clearInterval(timer);timer=null;}}
+      function pause(){stop();clearTimeout(resume);resume=setTimeout(play,9000);}
+      car.addEventListener("pointerdown",pause);
+      car.addEventListener("wheel",pause,{passive:true});
+      play();
     })();
   </script>
   <div class="pv-ribbon">PREVIEW · Hero carousel — eta live site na</div>
