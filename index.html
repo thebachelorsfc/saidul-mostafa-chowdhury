@@ -9,7 +9,8 @@
     <title>Saidul Mostafa Chowdhury — One Man, Three Worlds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
     <style>
       :root{
         --acc:#e6b93f;
@@ -557,6 +558,12 @@
       body.hero-off .hslide img,body.hero-off .name .gold,body.hero-off .scroll-cue .arr{animation-play-state:paused}
       .hcar{overscroll-behavior-x:contain}
       .hslide picture{display:block;width:100%}
+
+      /* ---------- PERFORMANCE PASS 3 2026-11-23: dot tap targets ---------- */
+      .hdot{width:32px;height:32px;border:0;border-radius:50%;background:transparent;padding:0;display:inline-flex;align-items:center;justify-content:center}
+      .hdot::before{content:"";width:9px;height:9px;flex:none;box-sizing:border-box;border-radius:50%;border:1.5px solid rgba(230,185,63,.85);background:transparent;transition:all .35s}
+      .hdot.on{width:32px;border-radius:50%;background:transparent;transform:none}
+      .hdot.on::before{width:22px;border-radius:999px;background:#e6b93f}
 </style>
   <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://saidul-mostafa-chowdhury.vercel.app/" />
